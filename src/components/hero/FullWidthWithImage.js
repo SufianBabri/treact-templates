@@ -31,7 +31,7 @@ const Paragraph = tw.p`max-w-md my-8 lg:my-5 lg:my-8 sm:text-lg lg:text-base xl:
 const Actions = styled.div`
   ${tw`mb-8 lg:mb-0`}
   .action {
-    ${tw`text-center inline-block w-full sm:w-48 py-4 font-semibold tracking-wide rounded hocus:outline-none focus:shadow-outline transition duration-300`}
+    ${tw`text-center inline-block w-full sm:w-48 py-4 font-semibold tracking-wide rounded hocus:outline-none focus:ring transition duration-300`}
   }
   .primaryAction {
     ${tw`bg-primary-500 text-gray-100 hover:bg-primary-700`}

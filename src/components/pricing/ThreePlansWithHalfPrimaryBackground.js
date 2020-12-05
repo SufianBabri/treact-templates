@@ -63,7 +63,7 @@ const PlanFeatures = styled.ul`
 
 const PlanAction = tw.div`mt-4`;
 const ActionButton = styled(PrimaryButtonBase)`
-  ${tw`block text-center text-sm font-semibold tracking-wider w-full text-gray-100 bg-primary-500 px-6 py-4 rounded hover:bg-primary-700 focus:shadow-outline focus:outline-none transition-colors duration-300`}
+  ${tw`block text-center text-sm font-semibold tracking-wider w-full text-gray-100 bg-primary-500 px-6 py-4 rounded hover:bg-primary-700 focus:ring focus:outline-none transition-colors duration-300`}
 `;
 
 const WhiteBackgroundOverlay = tw.div`absolute inset-x-0 bottom-0 h-1/6 lg:h-1/3 bg-white z-0`;

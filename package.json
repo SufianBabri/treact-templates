@@ -6,8 +6,10 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "autoprefixer": "^10.0.4",
     "feather-icons": "^4.28.0",
     "framer-motion": "^1.11.1",
+    "postcss": "^8.1.14",
     "react": "^17.0.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.1",
@@ -19,7 +21,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
     "tailwindcss": "^2.0.1",
-    "twin.macro": "^1.12.1",
+    "twin.macro": "^2.0.4",
     "use-in-view": "^1.0.15"
   },
   "resolutions": {

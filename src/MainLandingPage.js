@@ -37,7 +37,7 @@ const Description = tw(
 const Actions = tw.div`flex flex-col sm:flex-row justify-center lg:justify-start`;
 const ActionButton = tw(
   AnchorLink
-)`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
+)`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:ring focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
 const PrimaryButton = tw(ActionButton)``;
 const SecondaryButton = tw(
   ActionButton

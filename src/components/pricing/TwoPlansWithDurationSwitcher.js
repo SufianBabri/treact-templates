@@ -58,7 +58,7 @@ const PlanFeatures = styled.div`
 
 const PlanAction = tw.div`px-4 pb-8`;
 const BuyNowButton = styled(PrimaryButtonBase)`
-  ${tw`rounded-full tracking-wider py-4 w-full text-sm hover:shadow-xl transform hocus:translate-x-px hocus:-translate-y-px focus:shadow-outline`}
+  ${tw`rounded-full tracking-wider py-4 w-full text-sm hover:shadow-xl transform hocus:translate-x-px hocus:-translate-y-px focus:ring`}
 `;
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
