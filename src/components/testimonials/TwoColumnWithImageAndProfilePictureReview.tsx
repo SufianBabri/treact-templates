@@ -24,7 +24,7 @@ const TestimonialTextSlider = tw(Slider)``;
 const TestimonialText = tw.div`outline-none`;
 
 const ImageAndControlContainer = tw.div`relative outline-none`;
-const Image = styled.div(props => [
+const Image = styled.div((props: IImageProps) => [
 	`background-image: url("${props.imageSrc}");`,
 	tw`rounded bg-cover bg-center h-80 sm:h-96 lg:h-144`
 ]);
@@ -37,7 +37,15 @@ const ControlButton = styled(PrimaryButton)`
   }
 `;
 
-const TextContainer = styled.div(props => [
+export interface ITextProps {
+	textOnLeft: boolean;
+}
+
+export interface IImageProps {
+	imageSrc: string;
+}
+
+const TextContainer = styled.div((props: ITextProps) => [
 	tw`flex flex-col w-full lg:w-7/12`,
 	props.textOnLeft ? tw`lg:pr-12 lg:order-first` : tw`lg:pl-12 lg:order-last`
 ]);
@@ -64,18 +72,34 @@ const DecoratorBlob2 = tw(
 	SvgDecoratorBlob2
 )`absolute w-32 bottom-0 right-0 -z-10 text-pink-500 opacity-15 transform translate-x-2/3 translate-y-8`;
 
+export interface IProps {
+	subheading: string | JSX.Element;
+	heading: string | JSX.Element;
+	description: string | JSX.Element;
+	testimonials: ITestimonial[];
+	textOnLeft: boolean;
+}
+
+export interface ITestimonial {
+	imageSrc: string;
+	profileImageSrc: string;
+	quote: string;
+	customerName: string;
+	customerTitle: string;
+}
+
 export default ({
 					subheading = '',
 					heading = 'Testimonials',
 					description = 'Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-					testimonials = null,
+					testimonials = [],
 					textOnLeft = false
-				}) => {
+				}: IProps) => {
 	/*
 	 * You can modify the testimonials shown by modifying the array below or passing in the testimonials prop above
 	 * You can add or remove objects from the array as you need.
 	 */
-	const defaultTestimonials = [
+	const defaultTestimonials: ITestimonial[] = [
 		{
 			imageSrc:
 				'https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80',
@@ -101,8 +125,8 @@ export default ({
 	if (!testimonials || testimonials.length === 0) testimonials = defaultTestimonials;
 
 	// useState is used instead of useRef below because we want to re-render when sliderRef becomes available (not null)
-	const [imageSliderRef, setImageSliderRef] = useState(null);
-	const [textSliderRef, setTextSliderRef] = useState(null);
+	const [imageSliderRef, setImageSliderRef] = useState<any>();
+	const [textSliderRef, setTextSliderRef] = useState<any>();
 
 	return (
 		<Container>
@@ -164,7 +188,13 @@ export default ({
 	);
 };
 
-const HeadingInfo = ({subheading, heading, description, ...props}) => (
+export interface IHeadingProps {
+	subheading: string | JSX.Element;
+	heading: string | JSX.Element;
+	description: string | JSX.Element;
+}
+
+const HeadingInfo = ({subheading, heading, description, ...props}: IHeadingProps) => (
 	<div {...props}>
 		{subheading ? <Subheading>{subheading}</Subheading> : null}
 		<HeadingTitle>{heading}</HeadingTitle>

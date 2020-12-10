@@ -12,7 +12,13 @@ const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
 const TwoColumn = tw.div`flex`;
 const Column = tw.div``;
 
-const Image = styled.div(props => [
+export interface IImageProps {
+	imageSrc: string;
+	imageContain: boolean;
+	imageShadow: boolean;
+}
+
+const Image = styled.div((props: IImageProps) => [
 	`background-image: url("${props.imageSrc}");`,
 	props.imageContain ? tw`bg-contain bg-no-repeat` : tw`bg-cover`,
 	props.imageShadow ? tw`shadow` : tw`shadow-none`,
@@ -36,6 +42,21 @@ const QuestionToggleIcon = styled.span`
 `;
 const Answer = motion.custom(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
 
+export interface IProps {
+	subheading: string | JSX.Element;
+	heading: string | JSX.Element;
+	description?: string | JSX.Element;
+	imageSrc: string;
+	imageContain: boolean;
+	imageShadow: boolean;
+	faqs?: IFrequentlyAskedQ[];
+}
+
+export interface IFrequentlyAskedQ {
+	question: string;
+	answer: string;
+}
+
 export default ({
 					subheading = '',
 					heading = 'Questions',
@@ -43,8 +64,8 @@ export default ({
 					imageSrc = 'https://images.unsplash.com/photo-1579427421635-a0015b804b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80',
 					imageContain = false,
 					imageShadow = true,
-					faqs = null
-				}) => {
+					faqs = []
+				}: IProps) => {
 	/*
 	 * You can modify FAQs either by modifying the below defaultFaqs array or by passing a custom array of FAQs using
 	 * the faqs prop
@@ -74,9 +95,9 @@ export default ({
 
 	if (!faqs || faqs.length === 0) faqs = defaultFaqs;
 
-	const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
+	const [activeQuestionIndex, setActiveQuestionIndex] = useState<number | null>(null);
 
-	const toggleQuestion = questionIndex => {
+	const toggleQuestion = (questionIndex: number) => {
 		if (activeQuestionIndex === questionIndex) setActiveQuestionIndex(null);
 		else setActiveQuestionIndex(questionIndex);
 	};
