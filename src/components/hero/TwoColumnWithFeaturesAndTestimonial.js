@@ -1,15 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import HeaderBase, { NavLinks, NavLink, PrimaryLink } from "components/headers/light.js";
-import { SectionHeading } from "components/misc/Headings.js";
-import { SectionDescription } from "components/misc/Typography.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { Container, ContentWithVerticalPadding } from "components/misc/Layouts.js";
-import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
-import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg"
-import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg"
+import React from 'react';
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import HeaderBase, {NavLink, NavLinks, PrimaryLink} from 'components/headers/light.js';
+import {SectionHeading} from 'components/misc/Headings.js';
+import {SectionDescription} from 'components/misc/Typography.js';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.js';
+import {Container, ContentWithVerticalPadding} from 'components/misc/Layouts.js';
+import {ReactComponent as CheckboxIcon} from 'feather-icons/dist/icons/check-circle.svg';
+import {ReactComponent as QuotesLeftIconBase} from 'images/quotes-l.svg'
+import {ReactComponent as SvgDecoratorBlob1} from 'images/dot-pattern.svg'
 
 const Header = tw(HeaderBase)`max-w-none`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
@@ -37,75 +36,75 @@ const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`
 
 
 export default ({
-  heading = "Better, Faster and Cheaper Cloud.",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  imageSrc = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-  imageDecoratorBlob = true,
-  primaryButtonUrl = "https://google.com",
-  primaryButtonText = "Get Started",
-  buttonRounded = true,
-  features = ["Available in 7 Locations", "Premium Internet Backbone", "99.99% Uptime SLA"],
-  testimonial = {
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    customerName: "Charlotte Hale",
-    customerCompany: "Delos Inc."
-  }
-}) => {
-  const buttonRoundedCss = buttonRounded && tw`rounded-full`;
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#">Testimonials</NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={buttonRoundedCss} href="/#">
-        Sign Up
-      </PrimaryLink>
-    </NavLinks>
-  ];
-  return (
-    <>
-      <Header links={navLinks} />
-      <Container>
-        <ContentWithVerticalPadding>
-          <Row>
-            <TextColumn>
-              <Heading>{heading}</Heading>
-              <Description>{description}</Description>
-              <PrimaryButton as="a" href={primaryButtonUrl} css={buttonRoundedCss}>
-                {primaryButtonText}
-              </PrimaryButton>
-              <FeatureList>
-                {features.map((feature, index) => (
-                  <Feature key={index}>
-                    <FeatureIcon />
-                    <FeatureText>{feature}</FeatureText>
-                  </Feature>
-                ))}
-              </FeatureList>
-            </TextColumn>
-            <ImageColumn>
-              <ImageContainer>
-                <Image src={imageSrc} />
-                {imageDecoratorBlob && <ImageDecoratorBlob />}
-                <Testimonial>
-                  <QuotesLeftIcon/>
-                  <Quote>{testimonial.quote}</Quote>
-                  <CustomerName>{testimonial.customerName}</CustomerName>
-                  <CustomerCompany>{testimonial.customerCompany}</CustomerCompany>
-                </Testimonial>
-              </ImageContainer>
-              <Offsetbackground />
-            </ImageColumn>
-          </Row>
-        </ContentWithVerticalPadding>
-      </Container>
-    </>
-  );
+					heading = 'Better, Faster and Cheaper Cloud.',
+					description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+					imageSrc = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+					imageDecoratorBlob = true,
+					primaryButtonUrl = 'https://google.com',
+					primaryButtonText = 'Get Started',
+					buttonRounded = true,
+					features = ['Available in 7 Locations', 'Premium Internet Backbone', '99.99% Uptime SLA'],
+					testimonial = {
+						quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+						customerName: 'Charlotte Hale',
+						customerCompany: 'Delos Inc.'
+					}
+				}) => {
+	const buttonRoundedCss = buttonRounded && tw`rounded-full`;
+	const navLinks = [
+		<NavLinks key={1}>
+			<NavLink href="/#">About</NavLink>
+			<NavLink href="/#">Blog</NavLink>
+			<NavLink href="/#">Pricing</NavLink>
+			<NavLink href="/#">Contact Us</NavLink>
+			<NavLink href="/#">Testimonials</NavLink>
+		</NavLinks>,
+		<NavLinks key={2}>
+			<NavLink href="/#" tw="lg:ml-12!">
+				Login
+			</NavLink>
+			<PrimaryLink css={buttonRoundedCss} href="/#">
+				Sign Up
+			</PrimaryLink>
+		</NavLinks>
+	];
+	return (
+		<>
+			<Header links={navLinks} />
+			<Container>
+				<ContentWithVerticalPadding>
+					<Row>
+						<TextColumn>
+							<Heading>{heading}</Heading>
+							<Description>{description}</Description>
+							<PrimaryButton as="a" href={primaryButtonUrl} css={buttonRoundedCss}>
+								{primaryButtonText}
+							</PrimaryButton>
+							<FeatureList>
+								{features.map((feature, index) => (
+									<Feature key={index}>
+										<FeatureIcon />
+										<FeatureText>{feature}</FeatureText>
+									</Feature>
+								))}
+							</FeatureList>
+						</TextColumn>
+						<ImageColumn>
+							<ImageContainer>
+								<Image src={imageSrc} />
+								{imageDecoratorBlob && <ImageDecoratorBlob />}
+								<Testimonial>
+									<QuotesLeftIcon />
+									<Quote>{testimonial.quote}</Quote>
+									<CustomerName>{testimonial.customerName}</CustomerName>
+									<CustomerCompany>{testimonial.customerCompany}</CustomerCompany>
+								</Testimonial>
+							</ImageContainer>
+							<Offsetbackground />
+						</ImageColumn>
+					</Row>
+				</ContentWithVerticalPadding>
+			</Container>
+		</>
+	);
 };

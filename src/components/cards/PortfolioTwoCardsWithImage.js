@@ -1,13 +1,12 @@
-import React from "react";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading, Subheading } from "components/misc/Headings.js";
-import { PrimaryLink as PrimaryLinkBase } from "components/misc/Links.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { ReactComponent as LocationIcon } from "feather-icons/dist/icons/map-pin.svg";
-import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
-import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
+import React from 'react';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import {SectionHeading, Subheading} from 'components/misc/Headings.js';
+import {PrimaryLink as PrimaryLinkBase} from 'components/misc/Links.js';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.js';
+import {ReactComponent as LocationIcon} from 'feather-icons/dist/icons/map-pin.svg';
+import {ReactComponent as TimeIcon} from 'feather-icons/dist/icons/clock.svg';
+import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-icon.svg';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -15,8 +14,8 @@ const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const ThreeColumn = tw.div`flex flex-wrap`;
 const Column = tw.div`xl:mr-12 xl:last:mr-0`;
 const HeadingColumn = styled(Column)(props => [
-  tw`w-full xl:w-5/12`,
-  props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:ml-12 xl:mr-0`
+	tw`w-full xl:w-5/12`,
+	props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:ml-12 xl:mr-0`
 ]);
 const CardColumn = tw(Column)`w-full md:w-1/2 xl:w-3/12 mt-16 xl:mt-0 xl:last:ml-auto`;
 
@@ -32,8 +31,8 @@ const PrimaryLink = styled(PrimaryLinkBase)`
 
 const Card = tw.div`mx-auto xl:mx-0 xl:ml-auto max-w-sm md:max-w-xs lg:max-w-sm xl:max-w-xs`;
 const CardImage = styled.div(props => [
-  `background-image: url("${props.imageSrc}");`,
-  tw`h-80 bg-cover bg-center rounded`
+	`background-image: url("${props.imageSrc}");`,
+	tw`h-80 bg-cover bg-center rounded`
 ]);
 
 const CardText = tw.div`mt-4`;
@@ -57,76 +56,76 @@ const CardMetaFeature = styled.div`
 const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;
 
 export default ({
-  subheading = "Our Portfolio",
-  headingHtmlComponent = (
-    <>
-      We've done some <span tw="text-primary-500">amazing projects.</span>
-    </>
-  ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
-  linkText = "View all Projects",
-  cardLinkText = "Read Case Study",
-  textOnLeft = false
-}) => {
-  const cards = [
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      company: "Tesla Inc.",
-      type: "Ad Campaign",
-      title: "Personalized Ad Campaign using Google AdWords",
-      durationText: "90 Days Campaign",
-      locationText: "New York"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      company: "Nestle",
-      type: "SEO Marketing",
-      title: "Ranking #1 for keywords like Chocolate, Snack",
-      durationText: "180 Day Campaign",
-      locationText: "Palo Alto"
-    }
-  ];
-  return (
-    <Container>
-      <Content>
-        <ThreeColumn>
-          <HeadingColumn textOnLeft={textOnLeft}>
-            <HeadingInfoContainer>
-              <Subheading>{subheading}</Subheading>
-              <HeadingTitle>{headingHtmlComponent}</HeadingTitle>
-              <HeadingDescription>{description}</HeadingDescription>
-              <PrimaryLink>
-                {linkText} <ArrowRightIcon />
-              </PrimaryLink>
-            </HeadingInfoContainer>
-          </HeadingColumn>
-          {cards.map((card, index) => (
-            <CardColumn key={index}>
-              <Card>
-                <CardImage imageSrc={card.imageSrc} />
-                <CardText>
-                  <CardHeader>
-                    <CardCompany>{card.company}</CardCompany>
-                    <CardType>{card.type}</CardType>
-                  </CardHeader>
-                  <CardTitle>{card.title}</CardTitle>
-                  <CardMeta>
-                    <CardMetaFeature>
-                      <TimeIcon /> {card.durationText}
-                    </CardMetaFeature>
-                    <CardMetaFeature>
-                      <LocationIcon /> {card.locationText}
-                    </CardMetaFeature>
-                  </CardMeta>
-                  <CardAction>{cardLinkText}</CardAction>
-                </CardText>
-              </Card>
-            </CardColumn>
-          ))}
-        </ThreeColumn>
-      </Content>
-    </Container>
-  );
+					subheading = 'Our Portfolio',
+					headingHtmlComponent = (
+						<>
+							We've done some <span tw="text-primary-500">amazing projects.</span>
+						</>
+					),
+					description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.',
+					linkText = 'View all Projects',
+					cardLinkText = 'Read Case Study',
+					textOnLeft = false
+				}) => {
+	const cards = [
+		{
+			imageSrc:
+				'https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80',
+			company: 'Tesla Inc.',
+			type: 'Ad Campaign',
+			title: 'Personalized Ad Campaign using Google AdWords',
+			durationText: '90 Days Campaign',
+			locationText: 'New York'
+		},
+		{
+			imageSrc:
+				'https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80',
+			company: 'Nestle',
+			type: 'SEO Marketing',
+			title: 'Ranking #1 for keywords like Chocolate, Snack',
+			durationText: '180 Day Campaign',
+			locationText: 'Palo Alto'
+		}
+	];
+	return (
+		<Container>
+			<Content>
+				<ThreeColumn>
+					<HeadingColumn textOnLeft={textOnLeft}>
+						<HeadingInfoContainer>
+							<Subheading>{subheading}</Subheading>
+							<HeadingTitle>{headingHtmlComponent}</HeadingTitle>
+							<HeadingDescription>{description}</HeadingDescription>
+							<PrimaryLink>
+								{linkText} <ArrowRightIcon />
+							</PrimaryLink>
+						</HeadingInfoContainer>
+					</HeadingColumn>
+					{cards.map((card, index) => (
+						<CardColumn key={index}>
+							<Card>
+								<CardImage imageSrc={card.imageSrc} />
+								<CardText>
+									<CardHeader>
+										<CardCompany>{card.company}</CardCompany>
+										<CardType>{card.type}</CardType>
+									</CardHeader>
+									<CardTitle>{card.title}</CardTitle>
+									<CardMeta>
+										<CardMetaFeature>
+											<TimeIcon /> {card.durationText}
+										</CardMetaFeature>
+										<CardMetaFeature>
+											<LocationIcon /> {card.locationText}
+										</CardMetaFeature>
+									</CardMeta>
+									<CardAction>{cardLinkText}</CardAction>
+								</CardText>
+							</Card>
+						</CardColumn>
+					))}
+				</ThreeColumn>
+			</Content>
+		</Container>
+	);
 };

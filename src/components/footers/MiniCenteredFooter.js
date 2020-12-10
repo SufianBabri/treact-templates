@@ -1,11 +1,11 @@
-import React from "react";
-import tw from "twin.macro";
-import styled from "styled-components";
-import {Container as ContainerBase } from "components/misc/Layouts.js"
-import logo from "../../images/logo.svg";
-import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import React from 'react';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import {Container as ContainerBase} from 'components/misc/Layouts.js'
+import logo from '../../images/logo.svg';
+import {ReactComponent as FacebookIcon} from '../../images/facebook-icon.svg';
+import {ReactComponent as TwitterIcon} from '../../images/twitter-icon.svg';
+import {ReactComponent as YoutubeIcon} from '../../images/youtube-icon.svg';
 
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
@@ -30,37 +30,37 @@ const SocialLink = styled.a`
 
 const CopyrightText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`
 export default () => {
-  return (
-    <Container>
-      <Content>
-        <Row>
-          <LogoContainer>
-            <LogoImg src={logo} />
-            <LogoText>Treact</LogoText>
-          </LogoContainer>
-          <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
-          </LinksContainer>
-          <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
-            </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
-            </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
-            </SocialLink>
-          </SocialLinksContainer>
-          <CopyrightText>
-            &copy; Copyright 2020, Treact Inc. All Rights Reserved.
-          </CopyrightText>
-        </Row>
-      </Content>
-    </Container>
-  );
+	return (
+		<Container>
+			<Content>
+				<Row>
+					<LogoContainer>
+						<LogoImg src={logo} />
+						<LogoText>Treact</LogoText>
+					</LogoContainer>
+					<LinksContainer>
+						<Link href="#">Home</Link>
+						<Link href="#">About</Link>
+						<Link href="#">Contact Us</Link>
+						<Link href="#">Blog</Link>
+						<Link href="#">Reviews</Link>
+					</LinksContainer>
+					<SocialLinksContainer>
+						<SocialLink href="https://facebook.com">
+							<FacebookIcon />
+						</SocialLink>
+						<SocialLink href="https://twitter.com">
+							<TwitterIcon />
+						</SocialLink>
+						<SocialLink href="https://youtube.com">
+							<YoutubeIcon />
+						</SocialLink>
+					</SocialLinksContainer>
+					<CopyrightText>
+						&copy; Copyright 2020, Treact Inc. All Rights Reserved.
+					</CopyrightText>
+				</Row>
+			</Content>
+		</Container>
+	);
 };

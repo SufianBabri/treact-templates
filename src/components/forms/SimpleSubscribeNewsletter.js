@@ -1,9 +1,9 @@
-import React from "react";
-import tw from "twin.macro";
-import {ReactComponent as EmailNewsletterIconBase } from "../../images/email-newsletter-icon.svg"
-import {Container as ContainerBase } from "components/misc/Layouts.js"
-import {SectionHeading} from "components/misc/Headings.js";
-import {PrimaryButton} from "components/misc/Buttons.js";
+import React from 'react';
+import tw from 'twin.macro';
+import {ReactComponent as EmailNewsletterIconBase} from '../../images/email-newsletter-icon.svg'
+import {Container as ContainerBase} from 'components/misc/Layouts.js'
+import {SectionHeading} from 'components/misc/Headings.js';
+import {PrimaryButton} from 'components/misc/Buttons.js';
 
 
 const Container = tw(ContainerBase)`bg-secondary-800 -mx-8`
@@ -24,25 +24,25 @@ const Button = tw(PrimaryButton)`w-full sm:w-auto mt-6 sm:mt-0 sm:rounded-l-none
 
 
 export default () => {
-  return (
-    <Container>
-      <Content>
-        <Row>
-          <TextColumn>
-            <EmailNewsletterIcon />
-            <HeadingInfoContainer>
-              <Heading>Newsletter</Heading>
-              <Description>Subscribe now to get our latest blog posts.</Description>
-            </HeadingInfoContainer>
-          </TextColumn>
-          <FormColumn>
-          <Form>
-            <Input name="newsletter" type="email" placeholder="Your Email Address" />
-            <Button type="submit">Subscribe Now</Button>
-          </Form>
-          </FormColumn>
-        </Row>
-      </Content>
-    </Container>
-  );
+	return (
+		<Container>
+			<Content>
+				<Row>
+					<TextColumn>
+						<EmailNewsletterIcon />
+						<HeadingInfoContainer>
+							<Heading>Newsletter</Heading>
+							<Description>Subscribe now to get our latest blog posts.</Description>
+						</HeadingInfoContainer>
+					</TextColumn>
+					<FormColumn>
+						<Form>
+							<Input name="newsletter" type="email" placeholder="Your Email Address" />
+							<Button type="submit">Subscribe Now</Button>
+						</Form>
+					</FormColumn>
+				</Row>
+			</Content>
+		</Container>
+	);
 };
