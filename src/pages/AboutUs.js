@@ -1,14 +1,14 @@
 import React from 'react';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import tw from 'twin.macro';
 import Header from 'components/headers/light';
-import Footer from 'components/footers/FiveColumnWithInputForm.js';
-import MainFeature1 from 'components/features/TwoColWithButton.js';
-// import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";
-// import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2.js";
-import Features from 'components/features/ThreeColSimple.js';
-// import Features from "components/features/ThreeColWithSideImage.js";
-import TeamCardGrid from 'components/cards/ProfileThreeColGrid.js';
+import Footer from 'components/footers/FiveColumnWithInputForm';
+import MainFeature1 from 'components/features/TwoColWithButton';
+// import MainFeature2 from "components/features/TwoColSingleFeatureWithStats";
+// import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2";
+import Features from 'components/features/ThreeColSimple';
+// import Features from "components/features/ThreeColWithSideImage";
+import TeamCardGrid from 'components/cards/ProfileThreeColGrid';
 
 import SupportIconImage from 'images/support-icon.svg';
 import ShieldIconImage from 'images/shield-icon.svg';

@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import Slider from 'react-slick';
 import tw from 'twin.macro';
 import styled from 'styled-components/macro'; //eslint-disable-line
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts.js';
+import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {SectionDescription} from 'components/misc/Typography.js';
+import {SectionDescription} from 'components/misc/Typography';
 import {ReactComponent as QuoteIconBase} from 'images/quotes-l.svg'
 import {ReactComponent as ArrowLeftIcon} from 'images/arrow-left-3-icon.svg'
 import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-3-icon.svg'

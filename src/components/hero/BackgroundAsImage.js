@@ -1,8 +1,8 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import Header, {DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle, PrimaryLink} from '../headers/light';
-import ResponsiveVideoEmbed from '../../helpers/ResponsiveVideoEmbed.js';
+import Header, {DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle, PrimaryLink} from 'components/headers/light';
+import ResponsiveVideoEmbed from 'helpers/ResponsiveVideoEmbed';
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}

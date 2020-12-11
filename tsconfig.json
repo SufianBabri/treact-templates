@@ -19,12 +19,12 @@
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "react-jsx",
-		"baseUrl": "src",
-		"files": [
-			"twin.d.ts"
-		]
+		"baseUrl": "src"
 	},
 	"include": [
 		"src"
+	],
+	"files": [
+		"src/twin.d.ts"
 	]
 }

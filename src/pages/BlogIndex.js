@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {css} from 'styled-components/macro';
 import Header from 'components/headers/light';
-import Footer from 'components/footers/FiveColumnWithInputForm.js';
+import Footer from 'components/footers/FiveColumnWithInputForm';
 import {SectionHeading} from 'components/misc/Headings';
 import {PrimaryButton} from 'components/misc/Buttons';
 

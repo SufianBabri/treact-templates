@@ -1,10 +1,10 @@
 import React from 'react';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import Header from 'components/headers/light';
-import Pricing from 'components/pricing/TwoPlansWithDurationSwitcher.js';
-import Testimonial from 'components/testimonials/ThreeColumnWithProfileImage.js';
-import Footer from 'components/footers/FiveColumnWithInputForm.js';
-import FAQ from 'components/faqs/SingleCol.js';
+import Pricing from 'components/pricing/TwoPlansWithDurationSwitcher';
+import Testimonial from 'components/testimonials/ThreeColumnWithProfileImage';
+import Footer from 'components/footers/FiveColumnWithInputForm';
+import FAQ from 'components/faqs/SingleCol';
 
 export default () => {
 	return (

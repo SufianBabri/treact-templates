@@ -2,13 +2,13 @@ import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {SectionHeading as HeadingTitle} from '../misc/Headings';
-import {ReactComponent as QuotesLeftIcon} from '../../images/quotes-l.svg';
-import {ReactComponent as QuotesRightIcon} from '../../images/quotes-r.svg';
-import {ReactComponent as ArrowLeftIcon} from '../../images/arrow-left-2-icon.svg';
-import {ReactComponent as ArrowRightIcon} from '../../images/arrow-right-2-icon.svg';
-import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-4.svg';
-import {ReactComponent as SvgDecoratorBlob2} from '../../images/svg-decorator-blob-5.svg';
+import {SectionHeading as HeadingTitle} from 'components/misc/Headings';
+import {ReactComponent as QuotesLeftIcon} from 'images/quotes-l.svg';
+import {ReactComponent as QuotesRightIcon} from 'images/quotes-r.svg';
+import {ReactComponent as ArrowLeftIcon} from 'images/arrow-left-2-icon.svg';
+import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-2-icon.svg';
+import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-4.svg';
+import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-5.svg';
 
 import 'slick-carousel/slick/slick.css';
 

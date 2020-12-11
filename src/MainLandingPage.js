@@ -3,8 +3,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import {Rnd} from 'react-rnd';
 import {motion} from 'framer-motion';
 
-import {components} from 'ComponentRenderer.js';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import {components} from 'ComponentRenderer';
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import {Container, Content2Xl, ContentWithVerticalPadding} from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import styled from 'styled-components';

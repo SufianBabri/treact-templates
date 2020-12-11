@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts.js';
+import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
 import {SectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-7.svg';
 import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-8.svg';

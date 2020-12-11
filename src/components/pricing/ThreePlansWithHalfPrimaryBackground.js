@@ -2,9 +2,9 @@ import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {SectionDescription} from 'components/misc/Typography.js';
+import {SectionDescription} from 'components/misc/Typography';
 import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
-import {Container as ContainerBase, ContentWithPaddingXl as ContentBase} from 'components/misc/Layouts.js';
+import {Container as ContainerBase, ContentWithPaddingXl as ContentBase} from 'components/misc/Layouts';
 import {ReactComponent as CheckboxIcon} from 'images/checkbox-circle.svg';
 
 const Container = tw(ContainerBase)`bg-primary-900 text-gray-100 -mx-8 px-8`;

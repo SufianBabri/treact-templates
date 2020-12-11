@@ -1,10 +1,10 @@
 import React from 'react';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
 import tw from 'twin.macro';
 import Header from 'components/headers/light';
-import Footer from 'components/footers/FiveColumnWithInputForm.js';
-import ContactUsForm from 'components/forms/TwoColContactUsWithIllustrationFullForm.js';
-import ContactDetails from 'components/cards/ThreeColContactDetails.js';
+import Footer from 'components/footers/FiveColumnWithInputForm';
+import ContactUsForm from 'components/forms/TwoColContactUsWithIllustrationFullForm';
+import ContactDetails from 'components/cards/ThreeColContactDetails';
 
 const Address = tw.span`leading-relaxed`;
 const AddressLine = tw.span`block`;

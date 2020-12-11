@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {css} from 'styled-components/macro'; //eslint-disable-line
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts.js';
+import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
 import {SectionHeading} from 'components/misc/Headings';
 import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
 import {ReactComponent as StarIcon} from 'images/star-icon.svg';
