@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 //eslint-disable-next-line
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings.js';
+import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography.js';
 
 import {ReactComponent as SvgDecoratorBlob3} from 'images/svg-decorator-blob-3.svg';

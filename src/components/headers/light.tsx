@@ -1,8 +1,8 @@
 import React from 'react';
 import {motion} from 'framer-motion';
-import tw from 'twin.macro';
+import tw, {TwStyle} from 'twin.macro';
 import styled from 'styled-components';
-import useAnimatedNavToggler from '../../helpers/useAnimatedNavToggler.js';
+import useAnimatedNavToggler from 'helpers/useAnimatedNavToggler';
 
 import logo from '../../images/logo.svg';
 import {ReactComponent as MenuIcon} from 'feather-icons/dist/icons/menu.svg';
@@ -45,7 +45,7 @@ export const NavToggle = tw.button`
 `;
 export const MobileNavLinks = motion.custom(styled.div`
   ${tw`lg:hidden z-10 fixed top-0 inset-x-0 mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white`}
-  ${NavLinks} {
+  ${NavLinks as any} {
     ${tw`flex flex-col items-center`}
   }
 `);
@@ -53,8 +53,17 @@ export const MobileNavLinks = motion.custom(styled.div`
 export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
+type BreakPointClass = 'sm' | 'md' | 'lg' | 'xl';
 
-export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = 'lg'}) => {
+export interface IProps {
+	roundedHeaderButton: boolean;
+	logoLink: JSX.Element;
+	links: JSX.Element[];
+	className: string;
+	collapseBreakpointClass: BreakPointClass
+}
+
+export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = 'lg'}: IProps) => {
 	/*
 	 * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
 	 * This links props should be an array of "NavLinks" components which is exported from this file.
@@ -77,7 +86,7 @@ export default ({roundedHeaderButton = false, logoLink, links, className, collap
 			<NavLink href="/#" tw="lg:ml-12!">
 				Login
 			</NavLink>
-			<PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#">Sign Up</PrimaryLink>
+			<PrimaryLink css={roundedHeaderButton ? tw`rounded-full` : tw``} href="/#">Sign Up</PrimaryLink>
 		</NavLinks>
 	];
 
@@ -121,7 +130,20 @@ export default ({roundedHeaderButton = false, logoLink, links, className, collap
  * Its written like this because we are using macros and we can not insert dynamic variables in macros
  */
 
-const collapseBreakPointCssMap = {
+interface ICss {
+	mobileNavLinks: TwStyle;
+	desktopNavLinks: TwStyle;
+	mobileNavLinksContainer: TwStyle;
+}
+
+interface ICssMap {
+	sm: ICss;
+	md: ICss;
+	lg: ICss;
+	xl: ICss;
+}
+
+const collapseBreakPointCssMap: ICssMap = {
 	sm: {
 		mobileNavLinks: tw`sm:hidden`,
 		desktopNavLinks: tw`sm:flex`,

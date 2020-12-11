@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import Header, {DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle, PrimaryLink} from '../headers/light.js';
+import Header, {DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle, PrimaryLink} from '../headers/light';
 import ResponsiveVideoEmbed from '../../helpers/ResponsiveVideoEmbed.js';
 
 const StyledHeader = styled(Header)`

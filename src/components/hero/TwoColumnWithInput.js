@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 //eslint-disable-next-line
-import Header from '../headers/light.js';
+import Header from '../headers/light';
 
 import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-1.svg';
 import DesignIllustration from '../../images/design-illustration-2.svg';

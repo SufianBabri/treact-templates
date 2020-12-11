@@ -2,9 +2,9 @@ import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {css} from 'styled-components/macro'; //eslint-disable-line
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings.js';
+import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography.js';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.js';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts.js';
 import {ReactComponent as SvgDecoratorBlob} from 'images/svg-decorator-blob-6.svg';
 

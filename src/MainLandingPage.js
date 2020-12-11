@@ -9,10 +9,10 @@ import {Container, Content2Xl, ContentWithVerticalPadding} from 'components/misc
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {css} from 'styled-components/macro';
-import {LogoLink} from 'components/headers/light.js';
+import {LogoLink} from 'components/headers/light';
 import {SectionHeading as HeadingBase} from 'components/misc/Headings';
 import {SectionDescription as DescriptionBase} from 'components/misc/Typography';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.js';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
 
 import {ReactComponent as CheckboxIcon} from 'feather-icons/dist/icons/check-circle.svg';
 import {ReactComponent as HandleIcon} from 'images/handle-icon.svg';

@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import tw from 'twin.macro';
-import Header from 'components/headers/light.js';
+import Header from 'components/headers/light';
 import Footer from 'components/footers/FiveColumnWithInputForm.js';
 import MainFeature1 from 'components/features/TwoColWithButton.js';
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";

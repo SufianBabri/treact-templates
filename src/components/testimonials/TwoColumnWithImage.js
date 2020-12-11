@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {SectionHeading as HeadingTitle} from '../misc/Headings.js';
+import {SectionHeading as HeadingTitle} from '../misc/Headings';
 import {ReactComponent as QuotesLeftIcon} from '../../images/quotes-l.svg';
 import {ReactComponent as QuotesRightIcon} from '../../images/quotes-r.svg';
 import {ReactComponent as ArrowLeftIcon} from '../../images/arrow-left-2-icon.svg';

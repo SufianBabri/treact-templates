@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {motion} from 'framer-motion';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings.js';
+import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography.js';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts.js';
 import {ReactComponent as ChevronDownIcon} from 'feather-icons/dist/icons/chevron-down.svg';

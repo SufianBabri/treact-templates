@@ -3,7 +3,7 @@ import AnimationRevealPage from 'helpers/AnimationRevealPage.js';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import Header from 'components/headers/light.js';
+import Header from 'components/headers/light';
 import Footer from 'components/footers/FiveColumnWithInputForm.js';
 import {SectionHeading} from 'components/misc/Headings';
 

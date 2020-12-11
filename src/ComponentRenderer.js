@@ -4,7 +4,7 @@ import AnimationRevealPage from 'helpers/AnimationRevealPage.js'
 
 import EventLandingPage from 'demos/EventLandingPage.js';
 import HotelTravelLandingPage from 'demos/HotelTravelLandingPage.js';
-import AgencyLandingPage from 'demos/AgencyLandingPage.tsx';
+import AgencyLandingPage from 'demos/AgencyLandingPage';
 import SaaSProductLandingPage from 'demos/SaaSProductLandingPage.js';
 import RestaurantLandingPage from 'demos/RestaurantLandingPage.js';
 import ServiceLandingPage from 'demos/ServiceLandingPage.js';
@@ -78,12 +78,12 @@ import GridWithFeaturedPostBlog from 'components/blogs/GridWithFeaturedPost.js';
 
 import TwoColumnWithImageTestimonial from 'components/testimonials/TwoColumnWithImage.js';
 import TwoColumnWithImageAndProfilePictureReviewTestimonial
-	from 'components/testimonials/TwoColumnWithImageAndProfilePictureReview.tsx';
+	from 'components/testimonials/TwoColumnWithImageAndProfilePictureReview';
 import TwoColumnWithImageAndRatingTestimonial from 'components/testimonials/TwoColumnWithImageAndRating.js';
 import ThreeColumnWithProfileImageTestimonial from 'components/testimonials/ThreeColumnWithProfileImage.js';
 import SimplePrimaryBackgroundTestimonial from 'components/testimonials/SimplePrimaryBackground.js';
 
-import SimpleWithSideImageFAQS from 'components/faqs/SimpleWithSideImage.tsx';
+import SimpleWithSideImageFAQS from 'components/faqs/SimpleWithSideImage';
 import SingleColFAQS from 'components/faqs/SingleCol.js';
 import TwoColumnPrimaryBackgroundFAQS from 'components/faqs/TwoColumnPrimaryBackground.js';
 

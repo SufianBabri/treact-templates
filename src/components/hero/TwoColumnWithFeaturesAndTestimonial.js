@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import HeaderBase, {NavLink, NavLinks, PrimaryLink} from 'components/headers/light.js';
-import {SectionHeading} from 'components/misc/Headings.js';
+import HeaderBase, {NavLink, NavLinks, PrimaryLink} from 'components/headers/light';
+import {SectionHeading} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography.js';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.js';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
 import {Container, ContentWithVerticalPadding} from 'components/misc/Layouts.js';
 import {ReactComponent as CheckboxIcon} from 'feather-icons/dist/icons/check-circle.svg';
 import {ReactComponent as QuotesLeftIconBase} from 'images/quotes-l.svg'

@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import Header, {LogoLink, NavLink as NavLinkBase, NavLinks} from '../headers/light.js';
+import Header, {LogoLink, NavLink as NavLinkBase, NavLinks} from '../headers/light';
 
 const StyledHeader = styled(Header)`
   ${tw`justify-between`}

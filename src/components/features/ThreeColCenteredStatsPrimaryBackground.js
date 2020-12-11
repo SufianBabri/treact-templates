@@ -1,6 +1,6 @@
 import React from 'react';
 import tw from 'twin.macro';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings.js';
+import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {Container as ContainerBase, ContentWithPaddingXl} from 'components/misc/Layouts';
 import {SectionDescription} from 'components/misc/Typography';
 

@@ -5,11 +5,11 @@ import HeaderBase, {
 	NavLink as NavLinkBase,
 	NavLinks,
 	PrimaryLink as PrimaryLinkBase
-} from '../headers/light.js';
+} from '../headers/light';
 import {Container as ContainerBase, Content2Xl, ContentWithVerticalPadding} from 'components/misc/Layouts.js';
-import {SectionHeading} from 'components/misc/Headings.js';
+import {SectionHeading} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography.js';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.js';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
 import logoImageSrc from 'images/logo-light.svg';
 import serverIllustrationImageSrc from 'images/server-illustration-2.svg';
 

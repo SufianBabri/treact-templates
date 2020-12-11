@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 //eslint-disable-next-line
-import Header from '../headers/light.js';
+import Header from '../headers/light';
 
 import ReactModalAdapter from '../../helpers/ReactModalAdapter.js';
 import ResponsiveVideoEmbed from '../../helpers/ResponsiveVideoEmbed.js';

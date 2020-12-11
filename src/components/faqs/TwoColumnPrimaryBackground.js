@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 import tw from 'twin.macro';
 import styled from 'styled-components/macro'; //eslint-disable-line
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts.js';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings.js';
+import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography.js';
 import {ReactComponent as ChevronDownIcon} from 'feather-icons/dist/icons/chevron-down.svg';
 

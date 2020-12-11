@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings.js';
+import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography.js';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts.js';
 import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-icon.svg';

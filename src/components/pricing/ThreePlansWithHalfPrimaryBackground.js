@@ -1,9 +1,9 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings.js';
+import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography.js';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.js';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
 import {Container as ContainerBase, ContentWithPaddingXl as ContentBase} from 'components/misc/Layouts.js';
 import {ReactComponent as CheckboxIcon} from 'images/checkbox-circle.svg';
 

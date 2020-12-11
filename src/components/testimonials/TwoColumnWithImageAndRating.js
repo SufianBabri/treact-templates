@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Slider from 'react-slick';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings.js';
+import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts.js';
 import loveIllustrationImageSrc from 'images/love-illustration.svg';
 import {ReactComponent as StarIconBase} from 'images/star-icon.svg';
