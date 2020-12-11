@@ -53,14 +53,13 @@ export const MobileNavLinks = motion.custom(styled.div`
 export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
-type BreakPointClass = 'sm' | 'md' | 'lg' | 'xl';
 
 export interface IProps {
 	roundedHeaderButton: boolean;
-	logoLink: JSX.Element;
+	logoLink?: JSX.Element;
 	links: JSX.Element[];
-	className: string;
-	collapseBreakpointClass: BreakPointClass
+	className?: string;
+	collapseBreakpointClass: 'sm' | 'md' | 'lg' | 'xl';
 }
 
 export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = 'lg'}: IProps) => {

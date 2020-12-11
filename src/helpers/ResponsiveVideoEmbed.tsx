@@ -1,7 +1,13 @@
 /* A simple iframe wrapper that makes 16:9 responsive embed */
 import React from 'react';
 
-export default ({url, background = 'black', className = 'video'}) => {
+interface IProps {
+	url: string;
+	background: string;
+	className?: string;
+}
+
+export default ({url, background = 'black', className = 'video'}: IProps) => {
 	return (
 		<div
 			className={className}

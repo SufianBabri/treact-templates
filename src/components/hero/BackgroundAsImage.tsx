@@ -6,11 +6,11 @@ import ResponsiveVideoEmbed from 'helpers/ResponsiveVideoEmbed';
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
-  ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
+  ${DesktopNavLinks as any} ${NavLink as any}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
 
-  ${NavToggle}.closed {
+  ${NavToggle as any}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
   }
 `;
@@ -82,7 +82,8 @@ export default () => {
 		<Container>
 			<OpacityOverlay />
 			<HeroContainer>
-				<StyledHeader links={navLinks} />
+				<StyledHeader links={navLinks} className={undefined} roundedHeaderButton={false} logoLink={undefined}
+							  collapseBreakpointClass={'lg'} />
 				<TwoColumn>
 					<LeftColumn>
 						<Notification>We have now launched operations in Europe.</Notification>
