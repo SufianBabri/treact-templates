@@ -1,8 +1,8 @@
 import React from 'react';
-import tw from 'twin.macro';
+import tw, {TwStyle} from 'twin.macro';
 import styled from 'styled-components';
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import StatsIllustrationSrc from 'images/stats-illustration.svg';
 import {ReactComponent as SvgDotPattern} from 'images/dot-pattern.svg';
 
@@ -10,12 +10,21 @@ const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto relative`;
-const TextColumn = styled(Column)(props => [
+
+interface ITextColumnProps {
+	textOnLeft: string;
+}
+
+const TextColumn = styled<any>(Column)((props: ITextColumnProps) => [
 	tw`md:w-7/12 mt-16 md:mt-0`,
 	props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
 ]);
 
-const Image = styled.div(props => [
+interface IImageProps {
+	imageSrc: string;
+}
+
+const Image = styled.div((props: IImageProps) => [
 	`background-image: url("${props.imageSrc}");`,
 	tw`rounded bg-contain bg-no-repeat bg-center h-full`
 ]);
@@ -38,6 +47,27 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 	tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`
 ]);
 
+interface KeyValueElement {
+	key: string;
+	value: string;
+}
+
+interface IProps {
+	subheading?: string | JSX.Element;
+	heading?: string | JSX.Element;
+	description?: string | JSX.Element;
+	primaryButtonText?: string;
+	primaryButtonUrl?: string;
+	imageSrc?: string;
+	imageCss?: TwStyle;
+	imageContainerCss?: TwStyle;
+	imageDecoratorBlob?: boolean;
+	imageDecoratorBlobCss?: TwStyle;
+	imageInsideDiv?: boolean;
+	statistics?: KeyValueElement[];
+	textOnLeft?: boolean;
+}
+
 export default ({
 					subheading = 'Our Track Record',
 					heading = (
@@ -49,17 +79,17 @@ export default ({
 					primaryButtonText = 'Learn More',
 					primaryButtonUrl = 'https://timerse.com',
 					imageSrc = StatsIllustrationSrc,
-					imageCss = null,
-					imageContainerCss = null,
+					imageCss = undefined,
+					imageContainerCss = undefined,
 					imageDecoratorBlob = false,
-					imageDecoratorBlobCss = null,
+					imageDecoratorBlobCss = undefined,
 					imageInsideDiv = true,
-					statistics = null,
+					statistics = undefined,
 					textOnLeft = false
-				}) => {
+				}: IProps) => {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 	//Change the statistics variable as you like, add or delete objects
-	const defaultStatistics = [
+	const defaultStatistics: KeyValueElement[] = [
 		{
 			key: 'Clients',
 			value: '2282+'
@@ -78,7 +108,7 @@ export default ({
 
 	return (
 		<Container>
-			<TwoColumn css={!imageInsideDiv && tw`md:items-center`}>
+			<TwoColumn css={imageInsideDiv ? tw`` : tw`md:items-center`}>
 				<ImageColumn css={imageContainerCss}>
 					{imageInsideDiv ? <Image imageSrc={imageSrc} css={imageCss} /> :
 						<img src={imageSrc} css={imageCss} alt="" />}

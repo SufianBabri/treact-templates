@@ -2,21 +2,22 @@ import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import {ReactComponent as BriefcaseIcon} from 'feather-icons/dist/icons/briefcase.svg';
 import {ReactComponent as MoneyIcon} from 'feather-icons/dist/icons/dollar-sign.svg';
 import TeamIllustrationSrc from 'images/team-illustration-2.svg';
+import {IImageColumnProps, ITextColumnProps} from '../interfaces/ColumnProps';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto`;
-const TextColumn = styled(Column)(props => [
+const TextColumn = styled(Column)((props: ITextColumnProps) => [
 	tw`md:w-7/12 mt-16 md:mt-0`,
 	props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
 ]);
 
-const Image = styled.div(props => [
+const Image = styled.div((props: IImageColumnProps) => [
 	`background-image: url("${props.imageSrc}");`,
 	tw`rounded bg-contain bg-no-repeat bg-center h-full`
 ]);
@@ -44,6 +45,22 @@ const FeatureDescription = tw.div`mt-1 text-sm`;
 
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
+interface Feature {
+	icon: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string }>;
+	title: string;
+	description: string;
+}
+
+interface IProps {
+	subheading?: string;
+	heading?: string | JSX.Element;
+	description?: string;
+	primaryButtonText?: string;
+	primaryButtonUrl?: string;
+	features?: Feature[];
+	textOnLeft?: boolean;
+}
+
 export default ({
 					subheading = 'Our Expertise',
 					heading = (
@@ -54,9 +71,9 @@ export default ({
 					description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 					primaryButtonText = 'See Our Portfolio',
 					primaryButtonUrl = 'https://timerse.com',
-					features = null,
+					features = undefined,
 					textOnLeft = true
-				}) => {
+				}: IProps) => {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
 	/*
@@ -65,12 +82,12 @@ export default ({
 	 */
 	const defaultFeatures = [
 		{
-			Icon: BriefcaseIcon,
+			icon: BriefcaseIcon,
 			title: 'Professionalism',
 			description: 'We have the best professional marketing people across the globe just to work with you.'
 		},
 		{
-			Icon: MoneyIcon,
+			icon: MoneyIcon,
 			title: 'Affordable',
 			description: 'We promise to offer you the best rate we can - at par with the industry standard.'
 		}
@@ -92,7 +109,7 @@ export default ({
 						<Features>
 							{features.map((feature, index) => (
 								<Feature key={index}>
-									<FeatureIconContainer>{<feature.Icon />}</FeatureIconContainer>
+									<FeatureIconContainer>{<feature.icon />}</FeatureIconContainer>
 									<FeatureText>
 										<FeatureHeading>{feature.title}</FeatureHeading>
 										<FeatureDescription>{feature.description}</FeatureDescription>

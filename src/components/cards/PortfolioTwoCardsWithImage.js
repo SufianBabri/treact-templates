@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import {SectionHeading, Subheading} from 'components/misc/Headings';
 import {PrimaryLink as PrimaryLinkBase} from 'components/misc/Links';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import {ReactComponent as LocationIcon} from 'feather-icons/dist/icons/map-pin.svg';
 import {ReactComponent as TimeIcon} from 'feather-icons/dist/icons/clock.svg';
 import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-icon.svg';

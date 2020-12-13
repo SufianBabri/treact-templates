@@ -2,7 +2,7 @@ import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {SectionHeading as HeadingTitle, Subheading} from 'components/misc/Headings';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import {ReactComponent as UserIcon} from 'feather-icons/dist/icons/user.svg';
 import {ReactComponent as TagIcon} from 'feather-icons/dist/icons/tag.svg';
 import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-1.svg';

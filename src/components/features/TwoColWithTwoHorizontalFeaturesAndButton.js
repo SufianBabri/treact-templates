@@ -2,7 +2,7 @@ import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import TeamIllustrationSrc from 'images/team-illustration-2.svg';
 import {ReactComponent as SvgDotPattern} from 'images/dot-pattern.svg';
 import {ReactComponent as BriefcaseIcon} from 'feather-icons/dist/icons/briefcase.svg';

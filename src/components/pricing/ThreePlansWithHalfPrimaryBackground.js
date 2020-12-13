@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import styled from 'styled-components';
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import {Container as ContainerBase, ContentWithPaddingXl as ContentBase} from 'components/misc/Layouts';
 import {ReactComponent as CheckboxIcon} from 'images/checkbox-circle.svg';
 

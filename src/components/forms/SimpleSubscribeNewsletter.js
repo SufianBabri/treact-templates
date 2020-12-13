@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 import {ReactComponent as EmailNewsletterIconBase} from 'images/email-newsletter-icon.svg'
 import {Container as ContainerBase} from 'components/misc/Layouts.js'
 import {SectionHeading} from 'components/misc/Headings';
-import {PrimaryButton} from 'components/misc/Buttons.ts';
+import {PrimaryButton} from 'components/misc/Buttons';
 
 
 const Container = tw(ContainerBase)`bg-secondary-800 -mx-8`

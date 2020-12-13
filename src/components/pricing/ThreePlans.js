@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {css} from 'styled-components/macro'; //eslint-disable-line
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons.ts';
+import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
 import {ReactComponent as SvgDecoratorBlob} from 'images/svg-decorator-blob-6.svg';
 
