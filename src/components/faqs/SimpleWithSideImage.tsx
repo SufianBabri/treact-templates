@@ -48,9 +48,9 @@ interface IFrequentlyAskedQ {
 }
 
 interface IProps {
-	subheading: string | JSX.Element;
+	subheading: string;
 	heading: string | JSX.Element;
-	description?: string | JSX.Element;
+	description?: string;
 	imageSrc: string;
 	imageContain: boolean;
 	imageShadow: boolean;

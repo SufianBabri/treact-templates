@@ -41,9 +41,9 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 ]);
 
 interface IProps {
-	subheading?: string | JSX.Element;
+	subheading?: string;
 	heading?: string | JSX.Element;
-	description?: string | JSX.Element;
+	description?: string;
 	primaryButtonText?: string;
 	primaryButtonUrl?: string;
 	imageSrc?: string;
