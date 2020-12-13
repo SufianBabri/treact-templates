@@ -8,17 +8,18 @@ import {SectionDescription} from 'components/misc/Typography';
 import {ReactComponent as TwitterIcon} from 'images/twitter-icon.svg';
 import {ReactComponent as LinkedinIcon} from 'images/linkedin-icon.svg';
 import {ReactComponent as GithubIcon} from 'images/github-icon.svg';
+import {IImageColumnProps} from '../interfaces/ColumnProps';
 
-const HeadingContainer = tw.div``
-const Heading = tw(SectionHeading)``
-const Subheading = tw(SubheadingBase)`text-center mb-3`
-const Description = tw(SectionDescription)`mx-auto text-center`
+const HeadingContainer = tw.div``;
+const Heading = tw(SectionHeading)``;
+const Subheading = tw(SubheadingBase)`text-center mb-3`;
+const Description = tw(SectionDescription)`mx-auto text-center`;
 
-const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`
-const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
+const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-w-5xl mx-auto`;
+const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`;
 const CardImage = styled.div`
-  ${props => css`background-image: url("${props.imageSrc}");`} ${tw`w-64 h-64 bg-contain bg-center rounded`}
-`
+  ${(props: IImageColumnProps) => css`background-image: url("${props.imageSrc}");`} ${tw`w-64 h-64 bg-contain bg-center rounded`}
+`;
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
   .position {
@@ -27,7 +28,7 @@ const CardContent = styled.div`
 
   .name {
     ${tw`mt-1 text-xl font-medium text-gray-900`} 9
-`
+`;
 
 const CardLinks = styled.div`
   ${tw`mt-6 flex`}
@@ -37,7 +38,26 @@ const CardLinks = styled.div`
       ${tw`fill-current w-6 h-6`}
     }
   }
-`
+`;
+
+interface ILink {
+	url: string;
+	icon: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string }>;
+}
+
+interface ICard {
+	imageSrc: string;
+	position: string;
+	name: string;
+	links: ILink[];
+}
+
+interface IProps {
+	heading?: string;
+	subheading?: string|JSX.Element;
+	description?: string;
+	cards?: ICard[];
+}
 
 export default ({
 					heading = 'Meet These Fine Folks.',
@@ -159,7 +179,7 @@ export default ({
 							],
 						},
 					]
-				}) => {
+				}: IProps) => {
 	return (
 		<Container>
 			<ContentWithPaddingXl>

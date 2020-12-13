@@ -55,11 +55,11 @@ export const DesktopNavLinks = tw.nav`
 `;
 
 interface IProps {
-	roundedHeaderButton: boolean;
+	roundedHeaderButton?: boolean;
 	logoLink?: JSX.Element;
-	links: JSX.Element[];
+	links?: JSX.Element[];
 	className?: string;
-	collapseBreakpointClass: 'sm' | 'md' | 'lg' | 'xl';
+	collapseBreakpointClass?: 'sm' | 'md' | 'lg' | 'xl';
 }
 
 export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = 'lg'}: IProps) => {

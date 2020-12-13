@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import tw from 'twin.macro';
+import tw, {TwStyle} from 'twin.macro';
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
@@ -49,6 +49,23 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-40`}
 `;
 
+interface ICard {
+	imageSrc: string;
+	title: string;
+	description: string;
+	url?: string;
+}
+
+interface IProps {
+	cards: ICard[];
+	linkText: string;
+	heading: string;
+	subheading?: string | JSX.Element;
+	description: string;
+	imageContainerCss?: TwStyle;
+	imageCss?: TwStyle;
+}
+
 export default ({
 					cards = [
 						{
@@ -74,11 +91,11 @@ export default ({
 					heading = '',
 					subheading = '',
 					description = '',
-					imageContainerCss = null,
-					imageCss = null
-				}) => {
+					imageContainerCss = undefined,
+					imageCss = undefined
+				}: IProps) => {
 	/*
-	 * This componets accepts a prop - `cards` which is an array of object denoting the cards. Each object in the cards array can have the following keys (Change it according to your need, you can also add more objects to have more cards in this feature component):
+	 * This components accepts a prop - `cards` which is an array of object denoting the cards. Each object in the cards array can have the following keys (Change it according to your need, you can also add more objects to have more cards in this feature component):
 	 *  1) imageSrc - the image shown at the top of the card
 	 *  2) title - the title of the card
 	 *  3) description - the description of the card
