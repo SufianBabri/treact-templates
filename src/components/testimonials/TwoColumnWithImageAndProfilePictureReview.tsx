@@ -12,6 +12,7 @@ import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-4.s
 import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-5.svg';
 
 import 'slick-carousel/slick/slick.css';
+import {IImageColumnProps, ITextColumnProps} from '../interfaces/ColumnProps';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -24,7 +25,7 @@ const TestimonialTextSlider = tw(Slider)``;
 const TestimonialText = tw.div`outline-none`;
 
 const ImageAndControlContainer = tw.div`relative outline-none`;
-const Image = styled.div((props: IImageProps) => [
+const Image = styled.div((props: IImageColumnProps) => [
 	`background-image: url("${props.imageSrc}");`,
 	tw`rounded bg-cover bg-center h-80 sm:h-96 lg:h-144`
 ]);
@@ -37,15 +38,7 @@ const ControlButton = styled(PrimaryButton)`
   }
 `;
 
-export interface ITextProps {
-	textOnLeft: boolean;
-}
-
-export interface IImageProps {
-	imageSrc: string;
-}
-
-const TextContainer = styled.div((props: ITextProps) => [
+const TextContainer = styled.div((props: ITextColumnProps) => [
 	tw`flex flex-col w-full lg:w-7/12`,
 	props.textOnLeft ? tw`lg:pr-12 lg:order-first` : tw`lg:pl-12 lg:order-last`
 ]);

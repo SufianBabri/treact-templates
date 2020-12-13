@@ -12,7 +12,7 @@ const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
 const TwoColumn = tw.div`flex`;
 const Column = tw.div``;
 
-export interface IImageProps {
+interface IImageProps {
 	imageSrc: string;
 	imageContain: boolean;
 	imageShadow: boolean;
@@ -42,6 +42,11 @@ const QuestionToggleIcon = styled.span`
 `;
 const Answer = motion.custom(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
 
+export interface IFrequentlyAskedQ {
+	question: string;
+	answer: string;
+}
+
 export interface IProps {
 	subheading: string | JSX.Element;
 	heading: string | JSX.Element;
@@ -50,11 +55,6 @@ export interface IProps {
 	imageContain: boolean;
 	imageShadow: boolean;
 	faqs?: IFrequentlyAskedQ[];
-}
-
-export interface IFrequentlyAskedQ {
-	question: string;
-	answer: string;
 }
 
 export default ({

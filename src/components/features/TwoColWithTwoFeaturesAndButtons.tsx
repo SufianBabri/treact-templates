@@ -43,9 +43,9 @@ const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-left`;
 const FeatureHeading = tw.div`font-bold text-lg text-primary-500`;
 const FeatureDescription = tw.div`mt-1 text-sm`;
 
-const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
+const PrimaryButton = tw<any>(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
-interface Feature {
+interface IFeature {
 	icon: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string }>;
 	title: string;
 	description: string;
@@ -57,7 +57,7 @@ interface IProps {
 	description?: string;
 	primaryButtonText?: string;
 	primaryButtonUrl?: string;
-	features?: Feature[];
+	features?: IFeature[];
 	textOnLeft?: boolean;
 }
 
