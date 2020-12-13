@@ -7,6 +7,7 @@ import {ReactComponent as UserIcon} from 'feather-icons/dist/icons/user.svg';
 import {ReactComponent as TagIcon} from 'feather-icons/dist/icons/tag.svg';
 import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-1.svg';
 import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-3.svg';
+import {IImageColumnProps} from '../interfaces/ColumnProps';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -17,7 +18,7 @@ const HeadingInfoContainer = tw.div`flex flex-col items-center`;
 const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
 
 const Card = tw.div`lg:mx-4 xl:mx-8 max-w-sm flex flex-col h-full`;
-const Image = styled.div(props => [
+const Image = styled.div((props: IImageColumnProps) => [
 	`background-image: url("${props.imageSrc}");`,
 	tw`bg-cover bg-center h-80 lg:h-64 rounded rounded-b-none`
 ]);
@@ -33,9 +34,9 @@ const Meta = styled.div`
 
 const Title = tw.h5`mt-4 leading-snug font-bold text-lg`;
 const Description = tw.p`mt-2 text-sm text-secondary-100`;
-const Link = styled(PrimaryButtonBase).attrs({as: 'a'})`
+const Link = styled<any>(PrimaryButtonBase).attrs({as: 'a'})`
   ${tw`inline-block mt-4 text-sm font-semibold`}
-`
+`;
 
 const DecoratorBlob1 = tw(
 	SvgDecoratorBlob1
@@ -44,12 +45,18 @@ const DecoratorBlob2 = tw(
 	SvgDecoratorBlob2
 )`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
 
+export interface IProps {
+	subheading?: string;
+	heading?: string | JSX.Element;
+	description?: string;
+}
+
 export default ({
 					subheading = 'Blog',
 					heading = <>We Love <span tw="text-primary-500">Writing.</span></>,
 					description = 'Some amazing blog posts that are written by even more amazing people.',
 
-				}) => {
+				}: IProps) => {
 	const blogPosts = [
 		{
 			imageSrc:

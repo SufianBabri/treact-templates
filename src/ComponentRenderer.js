@@ -1,6 +1,6 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
-import AnimationRevealPage from 'helpers/AnimationRevealPage.js'
+import AnimationRevealPage from 'helpers/AnimationRevealPage';
 
 import EventLandingPage from 'demos/EventLandingPage';
 import HotelTravelLandingPage from 'demos/HotelTravelLandingPage';
@@ -68,8 +68,8 @@ import SliderCards from 'components/cards/ThreeColSlider';
 import TrendingCards from 'components/cards/TwoTrendingPreviewCardsWithImage';
 import PortfolioCards from 'components/cards/PortfolioTwoCardsWithImage';
 import TabGridCards from 'components/cards/TabCardGrid';
-import ProfileThreeColGridCards from 'components/cards/ProfileThreeColGrid.js'
-import ThreeColContactDetailsCards from 'components/cards/ThreeColContactDetails.js'
+import ProfileThreeColGridCards from 'components/cards/ProfileThreeColGrid';
+import ThreeColContactDetailsCards from 'components/cards/ThreeColContactDetails';
 
 import ThreeColSimpleWithImageBlog from 'components/blogs/ThreeColSimpleWithImage';
 import ThreeColSimpleWithImageAndDashedBorderBlog from 'components/blogs/ThreeColSimpleWithImageAndDashedBorder';

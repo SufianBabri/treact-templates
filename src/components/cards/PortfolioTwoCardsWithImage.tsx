@@ -7,13 +7,14 @@ import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import {ReactComponent as LocationIcon} from 'feather-icons/dist/icons/map-pin.svg';
 import {ReactComponent as TimeIcon} from 'feather-icons/dist/icons/clock.svg';
 import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-icon.svg';
+import {IImageColumnProps, ITextColumnProps} from '../interfaces/ColumnProps';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const ThreeColumn = tw.div`flex flex-wrap`;
 const Column = tw.div`xl:mr-12 xl:last:mr-0`;
-const HeadingColumn = styled(Column)(props => [
+const HeadingColumn = styled(Column)((props: ITextColumnProps) => [
 	tw`w-full xl:w-5/12`,
 	props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:ml-12 xl:mr-0`
 ]);
@@ -30,7 +31,7 @@ const PrimaryLink = styled(PrimaryLinkBase)`
 `;
 
 const Card = tw.div`mx-auto xl:mx-0 xl:ml-auto max-w-sm md:max-w-xs lg:max-w-sm xl:max-w-xs`;
-const CardImage = styled.div(props => [
+const CardImage = styled.div((props: IImageColumnProps) => [
 	`background-image: url("${props.imageSrc}");`,
 	tw`h-80 bg-cover bg-center rounded`
 ]);
