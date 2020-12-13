@@ -56,6 +56,15 @@ const CardMetaFeature = styled.div`
 `;
 const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;
 
+interface IProps {
+	subheading?: string | JSX.Element;
+	headingHtmlComponent?: string | JSX.Element;
+	description?: string;
+	linkText?: string;
+	cardLinkText?: string;
+	textOnLeft?: boolean;
+}
+
 export default ({
 					subheading = 'Our Portfolio',
 					headingHtmlComponent = (
@@ -67,7 +76,7 @@ export default ({
 					linkText = 'View all Projects',
 					cardLinkText = 'Read Case Study',
 					textOnLeft = false
-				}) => {
+				}: IProps) => {
 	const cards = [
 		{
 			imageSrc:

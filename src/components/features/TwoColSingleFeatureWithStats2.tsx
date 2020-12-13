@@ -40,6 +40,11 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 	tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`
 ]);
 
+interface IStatistic {
+	key: string;
+	value: string;
+}
+
 interface IProps {
 	subheading?: string;
 	heading?: string | JSX.Element;
@@ -54,11 +59,6 @@ interface IProps {
 	imageInsideDiv?: boolean;
 	statistics?: IStatistic[];
 	textOnLeft?: boolean;
-}
-
-interface IStatistic {
-	key: string;
-	value: string;
 }
 
 export default ({

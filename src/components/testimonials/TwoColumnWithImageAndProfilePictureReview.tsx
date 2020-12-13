@@ -65,20 +65,20 @@ const DecoratorBlob2 = tw(
 	SvgDecoratorBlob2
 )`absolute w-32 bottom-0 right-0 -z-10 text-pink-500 opacity-15 transform translate-x-2/3 translate-y-8`;
 
-interface IProps {
-	subheading: string;
-	heading: string | JSX.Element;
-	description: string | JSX.Element;
-	testimonials: ITestimonial[];
-	textOnLeft: boolean;
-}
-
 interface ITestimonial {
 	imageSrc: string;
 	profileImageSrc: string;
 	quote: string;
 	customerName: string;
 	customerTitle: string;
+}
+
+interface IProps {
+	subheading: string;
+	heading: string | JSX.Element;
+	description: string | JSX.Element;
+	testimonials: ITestimonial[];
+	textOnLeft: boolean;
 }
 
 export default ({
