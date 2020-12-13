@@ -54,7 +54,7 @@ export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
 
-export interface IProps {
+interface IProps {
 	roundedHeaderButton: boolean;
 	logoLink?: JSX.Element;
 	links: JSX.Element[];

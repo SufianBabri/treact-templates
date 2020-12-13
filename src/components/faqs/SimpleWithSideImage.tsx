@@ -42,12 +42,12 @@ const QuestionToggleIcon = styled.span`
 `;
 const Answer = motion.custom(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
 
-export interface IFrequentlyAskedQ {
+interface IFrequentlyAskedQ {
 	question: string;
 	answer: string;
 }
 
-export interface IProps {
+interface IProps {
 	subheading: string | JSX.Element;
 	heading: string | JSX.Element;
 	description?: string | JSX.Element;
