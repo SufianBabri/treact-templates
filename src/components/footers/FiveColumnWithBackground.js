@@ -27,7 +27,7 @@ const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
 const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-100`;
 
-const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-400`;
+const CopyrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-400`;
 
 const SocialLinksContainer = tw.div`mt-8 md:mt-0 flex`;
 const SocialLink = styled.a`
@@ -142,7 +142,7 @@ export default () => {
 						<LogoImg src={LogoImage} />
 						<LogoText>Treact Inc.</LogoText>
 					</LogoContainer>
-					<CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+					<CopyrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopyrightNotice>
 					<SocialLinksContainer>
 						<SocialLink href="https://facebook.com">
 							<FacebookIcon />
