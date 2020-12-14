@@ -1,15 +1,21 @@
-import React from "react";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-
-import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import React from 'react';
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import Header, {
+	DesktopNavLinks,
+	LogoLink,
+	NavLink,
+	NavLinks,
+	NavToggle,
+	PrimaryLink as PrimaryLinkBase
+} from 'components/headers/light';
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none w-full`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
+
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
   }
@@ -36,42 +42,42 @@ const Heading = styled.h1`
 const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 font-bold shadow transition duration-300 bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:outline-none focus:ring`;
 
 export default () => {
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="#">
-        About
-      </NavLink>
-      <NavLink href="#">
-        Blog
-      </NavLink>
-      <NavLink href="#">
-        Locations
-      </NavLink>
-      <NavLink href="#">
-        Pricing
-      </NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">
-        Hire Us
-      </PrimaryLink>
-    </NavLinks>
-  ];
+	const navLinks = [
+		<NavLinks key={1}>
+			<NavLink href="#">
+				About
+			</NavLink>
+			<NavLink href="#">
+				Blog
+			</NavLink>
+			<NavLink href="#">
+				Locations
+			</NavLink>
+			<NavLink href="#">
+				Pricing
+			</NavLink>
+		</NavLinks>,
+		<NavLinks key={2}>
+			<PrimaryLink href="/#">
+				Hire Us
+			</PrimaryLink>
+		</NavLinks>
+	];
 
-  return (
-    <Container>
-      <OpacityOverlay />
-      <HeroContainer>
-        <StyledHeader links={navLinks} />
-        <Content>
-          <Heading>
-              Book Music & Comedy Events
-              <br />
-              anywhere in New York
-          </Heading>
-          <PrimaryAction>Search Events Near Me</PrimaryAction>
-        </Content>
-      </HeroContainer>
-    </Container>
-  );
+	return (
+		<Container>
+			<OpacityOverlay />
+			<HeroContainer>
+				<StyledHeader links={navLinks} />
+				<Content>
+					<Heading>
+						Book Music & Comedy Events
+						<br />
+						anywhere in New York
+					</Heading>
+					<PrimaryAction>Search Events Near Me</PrimaryAction>
+				</Content>
+			</HeroContainer>
+		</Container>
+	);
 };

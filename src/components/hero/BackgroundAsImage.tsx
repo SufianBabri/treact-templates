@@ -1,17 +1,15 @@
-import React from "react";
-import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-
-import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
-import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
+import tw from 'twin.macro';
+import styled from 'styled-components';
+import Header, {DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle, PrimaryLink} from 'components/headers/light';
+import ResponsiveVideoEmbed from 'helpers/ResponsiveVideoEmbed';
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
-  ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
+  ${DesktopNavLinks as any} ${NavLink as any}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
-  ${NavToggle}.closed {
+
+  ${NavToggle as any}.closed {
     ${tw`text-gray-100 hover:text-primary-500`}
   }
 `;
@@ -49,6 +47,7 @@ const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 56.25% !important;
   padding-top: 0px !important;
+
   ${tw`rounded`}
   iframe {
     ${tw`rounded bg-black shadow-xl`}
@@ -56,51 +55,52 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 `;
 
 export default () => {
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="#">
-        About
-      </NavLink>
-      <NavLink href="#">
-        Blog
-      </NavLink>
-      <NavLink href="#">
-        Locations
-      </NavLink>
-      <NavLink href="#">
-        Pricing
-      </NavLink>
-    </NavLinks>,
-    <NavLinks key={2}>
-      <PrimaryLink href="/#">
-        Hire Us
-      </PrimaryLink>
-    </NavLinks>
-  ];
+	const navLinks = [
+		<NavLinks key={1}>
+			<NavLink href="#">
+				About
+			</NavLink>
+			<NavLink href="#">
+				Blog
+			</NavLink>
+			<NavLink href="#">
+				Locations
+			</NavLink>
+			<NavLink href="#">
+				Pricing
+			</NavLink>
+		</NavLinks>,
+		<NavLinks key={2}>
+			<PrimaryLink href="/#">
+				Hire Us
+			</PrimaryLink>
+		</NavLinks>
+	];
 
-  return (
-    <Container>
-      <OpacityOverlay />
-      <HeroContainer>
-        <StyledHeader links={navLinks} />
-        <TwoColumn>
-          <LeftColumn>
-            <Notification>We have now launched operations in Europe.</Notification>
-            <Heading>
-              <span>Hire the best</span>
-              <br />
-              <SlantedBackground>Marketing Team.</SlantedBackground>
-            </Heading>
-            <PrimaryAction>Read Customer Stories</PrimaryAction>
-          </LeftColumn>
-          <RightColumn>
-            <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
-              background="transparent"
-            />
-          </RightColumn>
-        </TwoColumn>
-      </HeroContainer>
-    </Container>
-  );
+	return (
+		<Container>
+			<OpacityOverlay />
+			<HeroContainer>
+				<StyledHeader links={navLinks} className={undefined} roundedHeaderButton={false} logoLink={undefined}
+							  collapseBreakpointClass={'lg'} />
+				<TwoColumn>
+					<LeftColumn>
+						<Notification>We have now launched operations in Europe.</Notification>
+						<Heading>
+							<span>Hire the best</span>
+							<br />
+							<SlantedBackground>Marketing Team.</SlantedBackground>
+						</Heading>
+						<PrimaryAction>Read Customer Stories</PrimaryAction>
+					</LeftColumn>
+					<RightColumn>
+						<StyledResponsiveVideoEmbed
+							url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
+							background="transparent"
+						/>
+					</RightColumn>
+				</TwoColumn>
+			</HeroContainer>
+		</Container>
+	);
 };

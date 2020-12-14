@@ -1,17 +1,16 @@
-import React from "react";
-import Slider from "react-slick";
-import styled from "styled-components";
-import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
-import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
-import { ReactComponent as QuotesLeftIcon } from "../../images/quotes-l.svg";
-import { ReactComponent as QuotesRightIcon } from "../../images/quotes-r.svg";
-import { ReactComponent as ArrowLeftIcon } from "../../images/arrow-left-2-icon.svg";
-import { ReactComponent as ArrowRightIcon } from "../../images/arrow-right-2-icon.svg";
-import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-4.svg";
-import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
+import React from 'react';
+import Slider from 'react-slick';
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import {SectionHeading as HeadingTitle} from 'components/misc/Headings';
+import {ReactComponent as QuotesLeftIcon} from 'images/quotes-l.svg';
+import {ReactComponent as QuotesRightIcon} from 'images/quotes-r.svg';
+import {ReactComponent as ArrowLeftIcon} from 'images/arrow-left-2-icon.svg';
+import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-2-icon.svg';
+import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-4.svg';
+import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-5.svg';
 
-import "slick-carousel/slick/slick.css";
+import 'slick-carousel/slick/slick.css';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -47,91 +46,91 @@ const SliderControlButtonContainer = styled.div`
   }
 `;
 
-const NextArrow = ({ currentSlide, slideCount, ...props }) => (
-  <SliderControlButtonContainer tw="right-0">
-    <button {...props}>
-      <ArrowRightIcon />
-    </button>
-  </SliderControlButtonContainer>
+const NextArrow = ({currentSlide, slideCount, ...props}) => (
+	<SliderControlButtonContainer tw="right-0">
+		<button {...props}>
+			<ArrowRightIcon />
+		</button>
+	</SliderControlButtonContainer>
 );
-const PreviousArrow = ({ currentSlide, slideCount, ...props }) => (
-  <SliderControlButtonContainer tw="left-0">
-    <button {...props}>
-      <ArrowLeftIcon />
-    </button>
-  </SliderControlButtonContainer>
+const PreviousArrow = ({currentSlide, slideCount, ...props}) => (
+	<SliderControlButtonContainer tw="left-0">
+		<button {...props}>
+			<ArrowLeftIcon />
+		</button>
+	</SliderControlButtonContainer>
 );
 
 const DecoratorBlob1 = tw(
-  SvgDecoratorBlob1
+	SvgDecoratorBlob1
 )`absolute w-32 top-0 left-0 -z-10 text-primary-500 opacity-25 transform -translate-x-full`;
 const DecoratorBlob2 = tw(
-  SvgDecoratorBlob2
+	SvgDecoratorBlob2
 )`absolute w-32 bottom-0 right-0 -z-10 text-pink-500 opacity-15 transform translate-x-2/3 translate-y-8`;
 
 export default () => {
-  /*
-   * You can modify the testimonials shown by modifying the array below
-   * You can add or remove objects from the array as you need.
-   */
-  const testimonials = [
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Charlotte Hale",
-      customerTitle: "CEO, Delos Inc."
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80",
-      quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Steven Marcetti",
-      customerTitle: "Event Manager, Brite"
-    }
-  ];
-  return (
-    <Container>
-      <Content>
-        <HeadingInfoContainer>
-          <HeadingTitle>Our Awesome Customers</HeadingTitle>
-          <HeadingDescription></HeadingDescription>
-        </HeadingInfoContainer>
-        <TestimonialSliderContainer>
-          <TestimonialSlider nextArrow={<NextArrow />} prevArrow={<PreviousArrow />}>
-            {testimonials.map((testimonial, index) => (
-              <Testimonial key={index}>
-                <ImageContainer>
-                  <img src={testimonial.imageSrc} alt={testimonial.customerName} />
-                </ImageContainer>
-                <TextContainer>
-                  <QuoteContainer>
-                    <QuotesLeft />
-                    <Quote>{testimonial.quote}</Quote>
-                    <QuotesRight />
-                  </QuoteContainer>
-                  <CustomerInfo>
-                    <CustomerName>{testimonial.customerName}</CustomerName>
-                    <CustomerTitle>{testimonial.customerTitle}</CustomerTitle>
-                  </CustomerInfo>
-                </TextContainer>
-              </Testimonial>
-            ))}
-          </TestimonialSlider>
-        </TestimonialSliderContainer>
-      </Content>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
-    </Container>
-  );
+	/*
+	 * You can modify the testimonials shown by modifying the array below
+	 * You can add or remove objects from the array as you need.
+	 */
+	const testimonials = [
+		{
+			imageSrc:
+				'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80',
+			quote:
+				'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+			customerName: 'Charlotte Hale',
+			customerTitle: 'CEO, Delos Inc.'
+		},
+		{
+			imageSrc:
+				'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80',
+			quote:
+				'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+			customerName: 'Adam Cuppy',
+			customerTitle: 'Founder, EventsNYC'
+		},
+		{
+			imageSrc:
+				'https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80',
+			quote:
+				'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.',
+			customerName: 'Steven Marcetti',
+			customerTitle: 'Event Manager, Brite'
+		}
+	];
+	return (
+		<Container>
+			<Content>
+				<HeadingInfoContainer>
+					<HeadingTitle>Our Awesome Customers</HeadingTitle>
+					<HeadingDescription></HeadingDescription>
+				</HeadingInfoContainer>
+				<TestimonialSliderContainer>
+					<TestimonialSlider nextArrow={<NextArrow />} prevArrow={<PreviousArrow />}>
+						{testimonials.map((testimonial, index) => (
+							<Testimonial key={index}>
+								<ImageContainer>
+									<img src={testimonial.imageSrc} alt={testimonial.customerName} />
+								</ImageContainer>
+								<TextContainer>
+									<QuoteContainer>
+										<QuotesLeft />
+										<Quote>{testimonial.quote}</Quote>
+										<QuotesRight />
+									</QuoteContainer>
+									<CustomerInfo>
+										<CustomerName>{testimonial.customerName}</CustomerName>
+										<CustomerTitle>{testimonial.customerTitle}</CustomerTitle>
+									</CustomerInfo>
+								</TextContainer>
+							</Testimonial>
+						))}
+					</TestimonialSlider>
+				</TestimonialSliderContainer>
+			</Content>
+			<DecoratorBlob1 />
+			<DecoratorBlob2 />
+		</Container>
+	);
 };
