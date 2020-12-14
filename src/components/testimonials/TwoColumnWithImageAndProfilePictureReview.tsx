@@ -182,7 +182,7 @@ export default ({
 };
 
 interface IHeadingProps {
-	subheading: string;
+	subheading: string | JSX.Element;
 	heading: string | JSX.Element;
 	description: string | JSX.Element;
 }
