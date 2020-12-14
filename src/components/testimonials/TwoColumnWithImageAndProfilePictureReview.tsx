@@ -74,7 +74,7 @@ interface ITestimonial {
 }
 
 interface IProps {
-	subheading: string;
+	subheading: string | JSX.Element;
 	heading: string | JSX.Element;
 	description: string | JSX.Element;
 	testimonials: ITestimonial[];

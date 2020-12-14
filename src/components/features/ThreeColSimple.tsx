@@ -59,9 +59,9 @@ interface ICard {
 interface IProps {
 	cards: ICard[];
 	linkText: string;
-	heading: string;
+	heading: string | JSX.Element;
 	subheading?: string | JSX.Element;
-	description: string;
+	description: string | JSX.Element;
 	imageContainerCss?: TwStyle;
 	imageCss?: TwStyle;
 }

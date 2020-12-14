@@ -53,9 +53,9 @@ interface ICard {
 }
 
 interface IProps {
-	heading?: string;
-	subheading?: string|JSX.Element;
-	description?: string;
+	heading?: string | JSX.Element;
+	subheading?: string | JSX.Element;
+	description?: string | JSX.Element;
 	cards?: ICard[];
 }
 

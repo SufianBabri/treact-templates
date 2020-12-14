@@ -52,7 +52,7 @@ const PrimaryButton = styled(PrimaryButtonBase)((props: IButtonProps) => [
 interface IProps {
 	subheading?: string | JSX.Element;
 	heading: string | JSX.Element;
-	description?: string;
+	description?: string | JSX.Element;
 	primaryButtonText?: string;
 	primaryButtonUrl?: string;
 	imageSrc: string;

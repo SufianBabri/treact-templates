@@ -59,7 +59,7 @@ const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;
 interface IProps {
 	subheading?: string | JSX.Element;
 	headingHtmlComponent?: string | JSX.Element;
-	description?: string;
+	description?: string | JSX.Element;
 	linkText?: string;
 	cardLinkText?: string;
 	textOnLeft?: boolean;

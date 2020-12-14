@@ -46,9 +46,9 @@ const DecoratorBlob2 = tw(
 )`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
 
 interface IProps {
-	subheading?: string;
+	subheading?: string | JSX.Element;
 	heading?: string | JSX.Element;
-	description?: string;
+	description?: string | JSX.Element;
 }
 
 export default ({

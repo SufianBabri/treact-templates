@@ -31,9 +31,9 @@ const Input = tw.input`border-2 px-5 py-3 rounded focus:outline-none font-medium
 const SubmitButton = tw(PrimaryButtonBase)`inline-block lg:ml-6 mt-6 lg:mt-0`;
 
 interface IProps {
-	subheading?: string;
+	subheading?: string | JSX.Element;
 	heading?: string | JSX.Element;
-	description?: string;
+	description?: string | JSX.Element;
 	submitButtonText?: string;
 	formAction?: string;
 	formMethod?: string;

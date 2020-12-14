@@ -52,9 +52,9 @@ interface IFeature {
 }
 
 interface IProps {
-	subheading?: string;
+	subheading?: string | JSX.Element;
 	heading?: string | JSX.Element;
-	description?: string;
+	description?: string | JSX.Element;
 	primaryButtonText?: string;
 	primaryButtonUrl?: string;
 	features?: IFeature[];
