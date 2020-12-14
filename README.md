@@ -1,3 +1,16 @@
+### Note:
+
+This template has originally been developed by Owais Khan. Please visit [his website](https://treact.owaiskhan.me/) for
+more information.
+
+I created this repo for updating the dependencies and converting the template to TypeScript for my own use.
+
+<br>
+
+---
+
+<br>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
