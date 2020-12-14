@@ -1,5 +1,4 @@
 /* A simple iframe wrapper that makes 16:9 responsive embed */
-import React from 'react';
 
 interface IProps {
 	url: string;

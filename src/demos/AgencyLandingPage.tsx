@@ -1,4 +1,3 @@
-import React from 'react';
 import AnimationRevealPage from 'helpers/AnimationRevealPage';
 
 import Hero from 'components/hero/BackgroundAsImage';

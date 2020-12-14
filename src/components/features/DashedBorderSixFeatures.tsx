@@ -1,7 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-//eslint-disable-next-line
 import {SectionHeading} from 'components/misc/Headings';
 
 import defaultCardImage from 'images/shield-icon.svg';

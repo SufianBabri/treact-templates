@@ -1,4 +1,3 @@
-import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';

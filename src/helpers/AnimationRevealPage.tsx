@@ -1,4 +1,3 @@
-import React from 'react';
 import tw from 'twin.macro';
 
 /* framer-motion and useInView here are used to animate the sections in when we reach them in the viewport

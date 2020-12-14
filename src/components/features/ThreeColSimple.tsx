@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import tw, {TwStyle} from 'twin.macro';
 import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
