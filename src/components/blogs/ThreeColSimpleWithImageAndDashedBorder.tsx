@@ -6,7 +6,7 @@ import {ReactComponent as UserIcon} from 'feather-icons/dist/icons/user.svg';
 import {ReactComponent as TagIcon} from 'feather-icons/dist/icons/tag.svg';
 import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-1.svg';
 import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-3.svg';
-import {IImageColumnProps} from '../interfaces/ColumnProps';
+import {IImageColumnProps} from 'components/interfaces/ColumnProps';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;

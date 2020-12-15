@@ -4,7 +4,7 @@ import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Head
 import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import StatsIllustrationSrc from 'images/stats-illustration.svg';
 import {ReactComponent as SvgDotPattern} from 'images/dot-pattern.svg';
-import {IImageColumnProps, ITextColumnProps} from '../interfaces/ColumnProps';
+import {IImageColumnProps, ITextColumnProps} from 'components/interfaces/ColumnProps';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;

@@ -12,7 +12,7 @@ import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-4.s
 import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-5.svg';
 
 import 'slick-carousel/slick/slick.css';
-import {IImageColumnProps, ITextColumnProps} from '../interfaces/ColumnProps';
+import {IImageColumnProps, ITextColumnProps} from 'components/interfaces/ColumnProps';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;

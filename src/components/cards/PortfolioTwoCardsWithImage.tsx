@@ -6,7 +6,7 @@ import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import {ReactComponent as LocationIcon} from 'feather-icons/dist/icons/map-pin.svg';
 import {ReactComponent as TimeIcon} from 'feather-icons/dist/icons/clock.svg';
 import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-icon.svg';
-import {IImageColumnProps, ITextColumnProps} from '../interfaces/ColumnProps';
+import {IImageColumnProps, ITextColumnProps} from 'components/interfaces/ColumnProps';
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
