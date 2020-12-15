@@ -7,8 +7,8 @@ import Pricing from 'components/pricing/ThreePlansWithHalfPrimaryBackground';
 import Testimonial from 'components/testimonials/SimplePrimaryBackground';
 import FAQ from 'components/faqs/TwoColumnPrimaryBackground';
 import Footer from 'components/footers/FiveColumnDark';
-import serverRedundancyIllustrationImageSrc from 'images/server-redundancy-illustration.svg'
-import serverSecureIllustrationImageSrc from 'images/server-secure-illustration.svg'
+import serverRedundancyIllustrationImageSrc from 'images/server-redundancy-illustration.svg';
+import serverSecureIllustrationImageSrc from 'images/server-secure-illustration.svg';
 
 
 export default () => {

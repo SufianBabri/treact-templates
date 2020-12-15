@@ -14,17 +14,17 @@ const TextColumn = styled(Column)(props => [
 
 const Image = styled.div(props => [
 	`background-image: url("${props.imageSrc}");`,
-	tw`rounded bg-cover bg-center h-full`,
+	tw`rounded bg-cover bg-center h-full`
 ]);
 const TextContent = tw.div`lg:py-8`;
 
 const Heading = tw(SectionHeading)`text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-4`
+const Description = tw.p`text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-4`;
 
-const Statistics = tw.div`mt-6 lg:mt-8 xl:mt-16 flex flex-wrap`
-const Statistic = tw.div`text-lg sm:text-2xl lg:text-3xl w-1/2 mt-4 lg:mt-10 text-center md:text-left`
-const Value = tw.div`font-bold text-primary-500`
-const Key = tw.div`font-medium text-gray-700`
+const Statistics = tw.div`mt-6 lg:mt-8 xl:mt-16 flex flex-wrap`;
+const Statistic = tw.div`text-lg sm:text-2xl lg:text-3xl w-1/2 mt-4 lg:mt-10 text-center md:text-left`;
+const Value = tw.div`font-bold text-primary-500`;
+const Key = tw.div`font-medium text-gray-700`;
 
 export default ({textOnLeft = false}) => {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
@@ -32,21 +32,21 @@ export default ({textOnLeft = false}) => {
 	const statistics = [
 		{
 			key: 'Countries',
-			value: '192',
+			value: '192'
 		},
 		{
 			key: 'Hotels',
-			value: '479',
+			value: '479'
 		},
 		{
 			key: 'Rooms',
-			value: '2093',
+			value: '2093'
 		},
 		{
 			key: 'Workers',
-			value: '10347',
+			value: '10347'
 		}
-	]
+	];
 
 	return (
 		<Container>

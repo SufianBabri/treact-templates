@@ -17,7 +17,7 @@ const Post = tw.a`flex flex-col h-full bg-gray-200 rounded`;
 const PostImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`} ${tw`h-64 sm:h-80 bg-center bg-cover rounded-t`}
 `;
-const PostText = tw.div`flex-1 px-6 py-8`
+const PostText = tw.div`flex-1 px-6 py-8`;
 const PostTitle = tw.h6`font-bold group-hocus:text-primary-500 transition duration-300 `;
 const PostDescription = tw.p``;
 const AuthorInfo = tw.div`flex`;
@@ -59,8 +59,8 @@ const PostContainer = styled.div`
   `}
 `;
 
-const DecoratorBlob1 = tw(SvgDotPatternIcon)`absolute bottom-0 left-0 w-32 h-32 mb-3 ml-3 transform -translate-x-1/2 translate-y-1/2 fill-current text-gray-500 opacity-50`
-const DecoratorBlob2 = tw(SvgDotPatternIcon)`absolute top-0 right-0 w-32 h-32 mt-16 mr-6 transform translate-x-1/2 -translate-y-1/2 fill-current text-gray-500 opacity-50`
+const DecoratorBlob1 = tw(SvgDotPatternIcon)`absolute bottom-0 left-0 w-32 h-32 mb-3 ml-3 transform -translate-x-1/2 translate-y-1/2 fill-current text-gray-500 opacity-50`;
+const DecoratorBlob2 = tw(SvgDotPatternIcon)`absolute top-0 right-0 w-32 h-32 mt-16 mr-6 transform translate-x-1/2 -translate-y-1/2 fill-current text-gray-500 opacity-50`;
 
 export default ({
 					subheading = '',

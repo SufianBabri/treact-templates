@@ -24,11 +24,11 @@ interface IImageProps {
 const Image = styled.img((props: IImageProps) => [
 	props.imageRounded && tw`rounded`,
 	props.imageBorder && tw`border`,
-	props.imageShadow && tw`shadow`,
+	props.imageShadow && tw`shadow`
 ]);
 
 const DecoratorBlob = styled(SvgDotPattern)(props => [
-	tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`,
+	tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`
 ]);
 
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;

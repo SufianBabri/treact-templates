@@ -53,7 +53,7 @@ export default () => {
 						imageSrc: CustomerLoveIconImage,
 						title: 'Customer Satisfaction',
 						description: 'Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport'
-					},
+					}
 				]}
 				linkText=""
 			/>

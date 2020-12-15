@@ -178,12 +178,12 @@ export default ({
 							current: {
 								opacity: 1,
 								scale: 1,
-								display: 'flex',
+								display: 'flex'
 							},
 							hidden: {
 								opacity: 0,
 								scale: 0.8,
-								display: 'none',
+								display: 'none'
 							}
 						}}
 						transition={{duration: 0.4}}

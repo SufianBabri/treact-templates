@@ -104,7 +104,7 @@ export default () => {
 				statistics={[
 					{
 						key: 'Orders',
-						value: '94000+',
+						value: '94000+'
 					},
 					{
 						key: 'Customers',

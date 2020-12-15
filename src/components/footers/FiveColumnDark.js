@@ -7,7 +7,7 @@ import {ReactComponent as TwitterIcon} from 'images/twitter-icon.svg';
 import {ReactComponent as YoutubeIcon} from 'images/youtube-icon.svg';
 
 const Container = tw.div`relative bg-gray-900 text-gray-100 -mx-8 -mb-8 px-8`;
-const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8`
+const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8`;
 const FiveColumns = tw.div`flex flex-wrap justify-between`;
 
 const Column = tw.div`w-1/2 md:w-1/5 mb-8 md:mb-0 text-sm sm:text-base text-center md:text-left`;
@@ -33,11 +33,11 @@ const SocialLink = styled.a`
   }
 `;
 
-const CopyrightAndCompanyInfoRow = tw.div`pb-0 text-sm font-normal flex flex-col sm:flex-row justify-between items-center`
-const CopyrightNotice = tw.div``
-const CompanyInfo = tw.div``
+const CopyrightAndCompanyInfoRow = tw.div`pb-0 text-sm font-normal flex flex-col sm:flex-row justify-between items-center`;
+const CopyrightNotice = tw.div``;
+const CompanyInfo = tw.div``;
 
-const Divider = tw.div`my-8 border-b-2 border-gray-800`
+const Divider = tw.div`my-8 border-b-2 border-gray-800`;
 export default () => {
 	return (
 		<Container>

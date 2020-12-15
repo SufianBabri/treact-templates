@@ -108,38 +108,38 @@ export const components = {
 		RestaurantLandingPage: {
 			component: RestaurantLandingPage,
 			imageSrc: RestaurantLandingPageImageSrc,
-			url: '/components/landingPages/RestaurantLandingPage',
+			url: '/components/landingPages/RestaurantLandingPage'
 		},
 		HotelTravelLandingPage: {
 			component: HotelTravelLandingPage,
 			imageSrc: HotelTravelLandingPageImageSrc,
-			url: '/components/landingPages/HotelTravelLandingPage',
+			url: '/components/landingPages/HotelTravelLandingPage'
 		},
 		SaaSProductLandingPage: {
 			component: SaaSProductLandingPage,
 			imageSrc: SaaSProductLandingPageImageSrc,
-			url: '/components/landingPages/SaaSProductLandingPage',
+			url: '/components/landingPages/SaaSProductLandingPage'
 		},
 		ServiceLandingPage: {
 			component: ServiceLandingPage,
 			imageSrc: ServiceLandingPageImageSrc,
-			url: '/components/landingPages/ServiceLandingPage',
+			url: '/components/landingPages/ServiceLandingPage'
 		},
 		EventLandingPage: {
 			component: EventLandingPage,
 			imageSrc: EventLandingPageImageSrc,
-			url: '/components/landingPages/EventLandingPage',
+			url: '/components/landingPages/EventLandingPage'
 		},
 		AgencyLandingPage: {
 			component: AgencyLandingPage,
 			imageSrc: AgencyLandingPageImageSrc,
-			url: '/components/landingPages/AgencyLandingPage',
+			url: '/components/landingPages/AgencyLandingPage'
 		},
 		HostingCloudLandingPage: {
 			component: HostingCloudLandingPage,
 			imageSrc: HostingCloudLandingPageImageSrc,
-			url: '/components/landingPages/HostingCloudLandingPage',
-		},
+			url: '/components/landingPages/HostingCloudLandingPage'
+		}
 	},
 
 	innerPages: {
@@ -147,43 +147,43 @@ export const components = {
 			component: LoginPage,
 			imageSrc: LoginPageImageSrc,
 			scrollAnimationDisabled: true,
-			url: '/components/innerPages/LoginPage',
+			url: '/components/innerPages/LoginPage'
 		},
 		SignupPage: {
 			component: SignupPage,
 			url: `/components/innerPages/SignupPage`,
 			imageSrc: SignupPageImageSrc,
-			scrollAnimationDisabled: true,
+			scrollAnimationDisabled: true
 		},
 		PricingPage: {
 			component: PricingPage,
 			url: `/components/innerPages/PricingPage`,
-			imageSrc: PricingPageImageSrc,
+			imageSrc: PricingPageImageSrc
 		},
 		AboutUsPage: {
 			component: AboutUsPage,
 			url: `/components/innerPages/AboutUsPage`,
-			imageSrc: AboutUsPageImageSrc,
+			imageSrc: AboutUsPageImageSrc
 		},
 		ContactUsPage: {
 			component: ContactUsPage,
 			url: `/components/innerPages/ContactUsPage`,
-			imageSrc: ContactUsPageImageSrc,
+			imageSrc: ContactUsPageImageSrc
 		},
 		BlogIndexPage: {
 			component: BlogIndexPage,
 			url: `/components/innerPages/BlogIndexPage`,
-			imageSrc: BlogIndexPageImageSrc,
+			imageSrc: BlogIndexPageImageSrc
 		},
 		TermsOfServicePage: {
 			component: TermsOfServicePage,
 			url: `/components/innerPages/TermsOfServicePage`,
-			imageSrc: TermsOfServicePageImageSrc,
+			imageSrc: TermsOfServicePageImageSrc
 		},
 		PrivacyPolicyPage: {
 			component: PrivacyPolicyPage,
 			url: `/components/innerPages/PrivacyPolicyPage`,
-			imageSrc: PrivacyPolicyPageImageSrc,
+			imageSrc: PrivacyPolicyPageImageSrc
 		}
 	},
 
@@ -194,38 +194,38 @@ export const components = {
 				BackgroundAsImage: {
 					name: 'With Background Image',
 					component: BackgroundAsImageHero,
-					url: '/components/blocks/Hero/BackgroundAsImage',
+					url: '/components/blocks/Hero/BackgroundAsImage'
 				},
 				IllustrationAndInput: {
 					name: 'With Image Illustration and Input',
 					component: IllustrationAndInputHero,
-					url: '/components/blocks/Hero/IllustrationAndInput',
+					url: '/components/blocks/Hero/IllustrationAndInput'
 				},
 				IllustrationAndVideo: {
 					name: 'With Image Illustration and Video',
 					component: IllustrationAndVideoHero,
-					url: '/components/blocks/Hero/IllustrationAndVideo',
+					url: '/components/blocks/Hero/IllustrationAndVideo'
 				},
 				FeaturesAndTestimonial: {
 					name: 'With Features And Customer Testimonial',
 					component: FeaturesAndTestimonialHero,
-					url: '/components/blocks/Hero/FeaturesAndTestimonial',
+					url: '/components/blocks/Hero/FeaturesAndTestimonial'
 				},
 				FullWidthWithImage: {
 					name: 'Full Width With Image',
 					component: FullWidthWithImageHero,
-					url: '/components/blocks/Hero/FullWidthWithImage',
+					url: '/components/blocks/Hero/FullWidthWithImage'
 				},
 				BackgroundAsImageWithCenteredContent: {
 					name: 'Full Width Background Image with centered content',
 					component: BackgroundAsImageWithCenteredContentHero,
-					url: '/components/blocks/Hero/BackgroundAsImageWithCenteredContent',
+					url: '/components/blocks/Hero/BackgroundAsImageWithCenteredContent'
 				},
 				IllustrationAndPrimaryBackground: {
 					name: 'Primary Background With Illustration',
 					component: IllustrationAndPrimaryBackgroundHero,
-					url: '/components/blocks/Hero/IllustrationAndPrimaryBackground',
-				},
+					url: '/components/blocks/Hero/IllustrationAndPrimaryBackground'
+				}
 			}
 		},
 		Pricing: {
@@ -234,18 +234,18 @@ export const components = {
 				TwoPlansWithDurationSwitcher: {
 					name: 'Two Plans With Duration Switcher',
 					component: TwoPlansWithDurationSwitcherPricing,
-					url: '/components/blocks/Pricing/TwoPlansWithDurationSwitcher',
+					url: '/components/blocks/Pricing/TwoPlansWithDurationSwitcher'
 				},
 				ThreePlansWithHalfPrimaryBackground: {
 					name: 'Three Plans With Primary Background at Top',
 					component: ThreePlansWithHalfPrimaryBackgroundPricing,
-					url: '/components/blocks/Pricing/ThreePlansWithHalfPrimaryBackground',
+					url: '/components/blocks/Pricing/ThreePlansWithHalfPrimaryBackground'
 				},
 				ThreePlans: {
 					name: 'Simple Three Plans',
 					component: ThreePlansPricing,
-					url: '/components/blocks/Pricing/ThreePlans',
-				},
+					url: '/components/blocks/Pricing/ThreePlans'
+				}
 			}
 		},
 		Features: {
@@ -254,63 +254,63 @@ export const components = {
 				ThreeColWithSideImage: {
 					name: 'Three Column With Side Image',
 					component: ThreeColWithSideImageFeatures,
-					url: '/components/blocks/Features/ThreeColWithSideImage',
+					url: '/components/blocks/Features/ThreeColWithSideImage'
 				},
 				TwoColWithButton: {
 					name: 'Two Column With Image and Action Button',
 					component: TwoColWithButtonFeatures,
-					url: '/components/blocks/Features/TwoColWithButton',
+					url: '/components/blocks/Features/TwoColWithButton'
 				},
 				ThreeColSimple: {
 					name: 'Three Column Simple',
 					component: ThreeColSimpleFeatures,
-					url: '/components/blocks/Features/ThreeColSimple',
+					url: '/components/blocks/Features/ThreeColSimple'
 				},
 				ThreeColWithSideImageWithPrimaryBackground: {
 					name: 'Three Column With Side Image With Primary Background',
 					component: ThreeColWithSideImageWithPrimaryBackgroundFeatures,
-					url: '/components/blocks/Features/ThreeColWithSideImageWithPrimaryBackground',
+					url: '/components/blocks/Features/ThreeColWithSideImageWithPrimaryBackground'
 				},
 				TwoColHorizontalWithButton: {
 					name: 'Two Column With Button and Horizonatal Features with Icon',
 					component: TwoColHorizontalWithButtonFeatures,
-					url: '/components/blocks/Features/TwoColHorizontalWithButton',
+					url: '/components/blocks/Features/TwoColHorizontalWithButton'
 				},
 				TwoColVerticalWithButton: {
 					name: 'Two Column With Vertical Features and Button',
 					component: TwoColVerticalWithButtonFeatures,
-					url: '/components/blocks/Features/TwoColVerticalWithButton',
+					url: '/components/blocks/Features/TwoColVerticalWithButton'
 				},
 				WithStepsAndImage: {
 					name: 'Steps with Image',
 					component: WithStepsAndImageFeatures,
-					url: '/components/blocks/Features/WithStepsAndImage',
+					url: '/components/blocks/Features/WithStepsAndImage'
 				},
 				ThreeColumnDashedBorder: {
 					name: 'Three Column With Dashed Primary Border',
 					component: ThreeColumnDashedBorderFeatures,
-					url: '/components/blocks/Features/ThreeColumnDashedBorder',
+					url: '/components/blocks/Features/ThreeColumnDashedBorder'
 				},
 				ThreeColCenteredStatsPrimaryBackground: {
 					name: 'Three Column With Centered Stats on Primary Background',
 					component: ThreeColCenteredStatsWithPrimaryBackgroundFeatures,
-					url: '/components/blocks/Features/ThreeColCenteredStatsPrimaryBackground',
+					url: '/components/blocks/Features/ThreeColCenteredStatsPrimaryBackground'
 				},
 				WithStatsAndImage: {
 					name: 'Stats With Image',
 					component: WithStatsAndImageFeatures,
-					url: '/components/blocks/Features/WithStatsAndImage',
+					url: '/components/blocks/Features/WithStatsAndImage'
 				},
 				WithStatsAndImage2: {
 					name: 'Stats With Image 2',
 					component: WithStatsAndImage2Features,
-					url: '/components/blocks/Features/WithStatsAndImage2',
+					url: '/components/blocks/Features/WithStatsAndImage2'
 				},
 				VerticalWithAlternateImageAndText: {
 					name: 'Vertical Feature Cards With Alternate Image and Text',
 					component: VerticalWithAlternateImageAndTextFeatures,
-					url: '/components/blocks/Features/VerticalWithAlternateImageAndText',
-				},
+					url: '/components/blocks/Features/VerticalWithAlternateImageAndText'
+				}
 			}
 		},
 
@@ -320,33 +320,33 @@ export const components = {
 				Slider: {
 					name: 'Three Column Slider',
 					component: SliderCards,
-					url: '/components/blocks/Cards/Slider',
+					url: '/components/blocks/Cards/Slider'
 				},
 				Portfolio: {
 					name: 'Two Column Portfolio Cards With Images ',
 					component: PortfolioCards,
-					url: '/components/blocks/Cards/Portfolio',
+					url: '/components/blocks/Cards/Portfolio'
 				},
 				TabGrid: {
 					name: 'Tab Card Grid With Tab Switcher',
 					component: TabGridCards,
-					url: '/components/blocks/Cards/TabGrid',
+					url: '/components/blocks/Cards/TabGrid'
 				},
 				ProfileThreeColGrid: {
 					name: 'Three Column Grid Cards For Profile',
 					component: ProfileThreeColGridCards,
-					url: '/components/blocks/Cards/ProfileThreeColGrid',
+					url: '/components/blocks/Cards/ProfileThreeColGrid'
 				},
 				ThreeColContactDetails: {
 					name: 'Three Column Contact Details Cards',
 					component: ThreeColContactDetailsCards,
-					url: '/components/blocks/Cards/ThreeColContactDetails',
+					url: '/components/blocks/Cards/ThreeColContactDetails'
 				},
 				Trending: {
 					name: 'Two Trending Preview Cards With Images',
 					component: TrendingCards,
-					url: '/components/blocks/Cards/Trending',
-				},
+					url: '/components/blocks/Cards/Trending'
+				}
 			}
 		},
 
@@ -356,23 +356,23 @@ export const components = {
 				GridWithFeaturedPost: {
 					name: 'Grid With Featured Post',
 					component: GridWithFeaturedPostBlog,
-					url: '/components/blocks/Blog/GridWithFeaturedPost',
+					url: '/components/blocks/Blog/GridWithFeaturedPost'
 				},
 				PopularAndRecentPosts: {
 					name: 'Popular And Recent Posts',
 					component: PopularAndRecentPostsBlog,
-					url: '/components/blocks/Blog/PopularAndRecentPosts',
+					url: '/components/blocks/Blog/PopularAndRecentPosts'
 				},
 				ThreeColSimpleWithImage: {
 					name: 'Simple Three Column With Image',
 					component: ThreeColSimpleWithImageBlog,
-					url: '/components/blocks/Blog/ThreeColSimpleWithImage',
+					url: '/components/blocks/Blog/ThreeColSimpleWithImage'
 				},
 				ThreeColSimpleWithImageAndDashedBorder: {
 					name: 'Simple Three Column With Image and Dashed Border',
 					component: ThreeColSimpleWithImageAndDashedBorderBlog,
-					url: '/components/blocks/Blog/ThreeColSimpleWithImageAndDashedBorder',
-				},
+					url: '/components/blocks/Blog/ThreeColSimpleWithImageAndDashedBorder'
+				}
 			}
 		},
 
@@ -382,28 +382,28 @@ export const components = {
 				TwoColumnWithImage: {
 					name: 'Two Column With Image',
 					component: TwoColumnWithImageTestimonial,
-					url: '/components/blocks/Testimonial/TwoColumnWithImage',
+					url: '/components/blocks/Testimonial/TwoColumnWithImage'
 				},
 				TwoColumnWithImageAndProfilePictureReview: {
 					name: 'Two Column With Image And Profile Picture Review',
 					component: TwoColumnWithImageAndProfilePictureReviewTestimonial,
-					url: '/components/blocks/Testimonial/TwoColumnWithImageAndProfilePictureReview',
+					url: '/components/blocks/Testimonial/TwoColumnWithImageAndProfilePictureReview'
 				},
 				TwoColumnWithImageAndRating: {
 					name: 'Two Column With Image And Rating',
 					component: TwoColumnWithImageAndRatingTestimonial,
-					url: '/components/blocks/Testimonial/TwoColumnWithImageAndRating',
+					url: '/components/blocks/Testimonial/TwoColumnWithImageAndRating'
 				},
 				ThreeColumnWithProfileImage: {
 					name: 'Three Column With Profile Image',
 					component: ThreeColumnWithProfileImageTestimonial,
-					url: '/components/blocks/Testimonial/ThreeColumnWithProfileImage',
+					url: '/components/blocks/Testimonial/ThreeColumnWithProfileImage'
 				},
 				SimplePrimaryBackground: {
 					name: 'Simple With Primary Background',
 					component: SimplePrimaryBackgroundTestimonial,
-					url: '/components/blocks/Testimonial/SimplePrimaryBackground',
-				},
+					url: '/components/blocks/Testimonial/SimplePrimaryBackground'
+				}
 			}
 		},
 
@@ -413,18 +413,18 @@ export const components = {
 				SimpleWithSideImage: {
 					name: 'Simple With Side Image',
 					component: SimpleWithSideImageFAQS,
-					url: '/components/blocks/FAQS/SimpleWithSideImage',
+					url: '/components/blocks/FAQS/SimpleWithSideImage'
 				},
 				SingleCol: {
 					name: 'Single Column',
 					component: SingleColFAQS,
-					url: '/components/blocks/FAQS/SingleCol',
+					url: '/components/blocks/FAQS/SingleCol'
 				},
 				TwoColumnPrimaryBackground: {
 					name: 'Two Column With Primary Background',
 					component: TwoColumnPrimaryBackgroundFAQS,
-					url: '/components/blocks/FAQS/TwoColumnPrimaryBackground',
-				},
+					url: '/components/blocks/FAQS/TwoColumnPrimaryBackground'
+				}
 			}
 		},
 
@@ -434,23 +434,23 @@ export const components = {
 				SimpleContactUs: {
 					name: 'Simple Contact Us',
 					component: SimpleContactUsForm,
-					url: '/components/blocks/Form/SimpleContactUs',
+					url: '/components/blocks/Form/SimpleContactUs'
 				},
 				SimpleSubscribeNewsletter: {
 					name: 'Simple Subscribe newsletter',
 					component: SimpleSubscribeNewsletterForm,
-					url: '/components/blocks/Form/SimpleSubscribeNewsletter',
+					url: '/components/blocks/Form/SimpleSubscribeNewsletter'
 				},
 				TwoColContactUs: {
 					name: 'Two Column Contact Us',
 					component: TwoColContactUsForm,
-					url: '/components/blocks/Form/TwoColContactUs',
+					url: '/components/blocks/Form/TwoColContactUs'
 				},
 				TwoColContactUsFull: {
 					name: 'Two Column Contact Us - Full Form',
 					component: TwoColContactUsFullForm,
-					url: '/components/blocks/Form/TwoColContactUsFull',
-				},
+					url: '/components/blocks/Form/TwoColContactUsFull'
+				}
 			}
 		},
 
@@ -460,18 +460,18 @@ export const components = {
 				GetStarted: {
 					name: 'Get Started',
 					component: GetStartedCTA,
-					url: '/components/blocks/CTA/GetStarted',
+					url: '/components/blocks/CTA/GetStarted'
 				},
 				GetStartedLight: {
 					name: 'Get Started Light',
 					component: GetStartedLightCTA,
-					url: '/components/blocks/CTA/GetStartedLight',
+					url: '/components/blocks/CTA/GetStartedLight'
 				},
 				DownloadApp: {
 					name: 'Download App',
 					component: DownloadAppCTA,
-					url: '/components/blocks/CTA/DownloadApp',
-				},
+					url: '/components/blocks/CTA/DownloadApp'
+				}
 			}
 		},
 
@@ -481,52 +481,52 @@ export const components = {
 				SimpleFiveColumn: {
 					name: 'Simple Five Column',
 					component: SimpleFiveColumnFooter,
-					url: '/components/blocks/Footer/SimpleFiveColumn',
+					url: '/components/blocks/Footer/SimpleFiveColumn'
 				},
 				FiveColumnWithInputForm: {
 					name: 'Five Column With Input Form',
 					component: FiveColumnWithInputFormFooter,
-					url: '/components/blocks/Footer/FiveColumnWithInputForm',
+					url: '/components/blocks/Footer/FiveColumnWithInputForm'
 				},
 				FiveColumnWithBackground: {
 					name: 'Five Column With background',
 					component: FiveColumnWithBackgroundFooter,
-					url: '/components/blocks/Footer/FiveColumnWithBackground',
+					url: '/components/blocks/Footer/FiveColumnWithBackground'
 				},
 				FiveColumnDark: {
 					name: 'Five Column Dark',
 					component: FiveColumnDarkFooter,
-					url: '/components/blocks/Footer/FiveColumnDark',
+					url: '/components/blocks/Footer/FiveColumnDark'
 				},
 				MiniCentered: {
 					name: 'Mini Centered Dark',
 					component: MiniCenteredFooter,
-					url: '/components/blocks/Footer/MiniCentered',
-				},
+					url: '/components/blocks/Footer/MiniCentered'
+				}
 			}
 		}
 	}
-}
+};
 
 export default () => {
-	const {type, subtype, name} = useParams()
+	const {type, subtype, name} = useParams();
 
 	try {
 		let Component = null;
 		if (type === 'blocks' && subtype) {
-			Component = components[type][subtype]['elements'][name].component
+			Component = components[type][subtype]['elements'][name].component;
 			return <AnimationRevealPage disabled>
 				<Component />
-			</AnimationRevealPage>
+			</AnimationRevealPage>;
 		} else
-			Component = components[type][name].component
+			Component = components[type][name].component;
 
 		if (Component)
-			return <Component />
+			return <Component />;
 
-		throw new Error('Component Not Found')
+		throw new Error('Component Not Found');
 	} catch (e) {
-		console.log(e)
-		return <div>Error: Component Not Found</div>
+		console.log(e);
+		return <div>Error: Component Not Found</div>;
 	}
 }

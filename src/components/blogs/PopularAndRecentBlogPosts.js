@@ -45,7 +45,7 @@ const RecentPostsContainer = styled.div`
     ${tw`h-20 w-20 flex-shrink-0`}
   }
 `;
-const PostTextContainer = tw.div``
+const PostTextContainer = tw.div``;
 
 export default () => {
 	// This setting is for animating the post background image on hover
@@ -121,8 +121,8 @@ export default () => {
 			title: 'An extremely funny trip to the Swiss Alps',
 			authorName: 'Naomi Watts',
 			url: 'https://timerse.com'
-		},
-	]
+		}
+	];
 
 	return (
 		<Container>

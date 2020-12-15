@@ -78,11 +78,11 @@ export default ({
 					planDurations = [
 						{
 							text: 'Month',
-							switcherText: 'Monthly',
+							switcherText: 'Monthly'
 						},
 						{
 							text: 'Year',
-							switcherText: 'Yearly',
+							switcherText: 'Yearly'
 						}
 					]
 				}) => {

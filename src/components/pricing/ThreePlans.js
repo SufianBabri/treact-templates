@@ -103,7 +103,7 @@ export default ({
 			price: '$17.99',
 			duration: 'Monthly',
 			mainFeature: 'Suited for Personal Blogs',
-			features: ['30 Templates', '7 Landing Pages', '12 Internal Pages', 'Basic Assistance'],
+			features: ['30 Templates', '7 Landing Pages', '12 Internal Pages', 'Basic Assistance']
 		},
 		{
 			name: 'Business',
@@ -111,15 +111,15 @@ export default ({
 			duration: 'Monthly',
 			mainFeature: 'Suited for Production Websites',
 			features: ['60 Templates', '8 Landing Pages', '22 Internal Pages', 'Priority Assistance'],
-			featured: true,
+			featured: true
 		},
 		{
 			name: 'Enterprise',
 			price: '$57.99',
 			duration: 'Monthly',
 			mainFeature: 'Suited for Big Companies',
-			features: ['90 Templates', '9 Landing Pages', '37 Internal Pages', 'Personal Assistance'],
-		},
+			features: ['90 Templates', '9 Landing Pages', '37 Internal Pages', 'Personal Assistance']
+		}
 	];
 
 	if (!plans) plans = defaultPlans;

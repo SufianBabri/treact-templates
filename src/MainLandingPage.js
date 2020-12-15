@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Rnd} from 'react-rnd';
 import {motion} from 'framer-motion';
 
@@ -67,9 +67,9 @@ const ComponentsContainer = tw.div`mt-24`;
 const ComponentsType = tw.h3`text-4xl font-black text-primary-500 border-b-4 border-primary-500 inline-block`;
 const Components = tw.div``;
 const Component = tw.div`mt-12 border rounded-lg bg-white`;
-const ComponentHeading = tw.div`px-8 py-5 border-b flex flex-col sm:flex-row justify-between items-center`
+const ComponentHeading = tw.div`px-8 py-5 border-b flex flex-col sm:flex-row justify-between items-center`;
 const ComponentName = tw.h6`text-lg`;
-const ComponentPreviewLink = tw.a`mt-4 sm:mt-0 text-primary-500 hocus:text-primary-900 transition duration-300 font-semibold flex items-center`
+const ComponentPreviewLink = tw.a`mt-4 sm:mt-0 text-primary-500 hocus:text-primary-900 transition duration-300 font-semibold flex items-center`;
 const ComponentContent = tw.div`flex justify-between overflow-hidden rounded-b-lg bg-gray-600 relative`;
 const ResizableBox = styled(Rnd)`
   ${tw`relative! bg-white pr-4`}
@@ -230,21 +230,21 @@ export default ({
 };
 
 const BlocksRenderer = ({blocks}) => {
-	const [lastVisibleBlockIndex, setLastVisibleBlockIndex] = useState(0)
+	const [lastVisibleBlockIndex, setLastVisibleBlockIndex] = useState(0);
 
 	const updateLastVisibleBlockIndex = (index) => {
-		console.log('LAST WAS ', lastVisibleBlockIndex)
+		console.log('LAST WAS ', lastVisibleBlockIndex);
 		if (index > lastVisibleBlockIndex)
-			setLastVisibleBlockIndex(index)
-	}
+			setLastVisibleBlockIndex(index);
+	};
 
 	return (
 		<ComponentsContainer>
 			{blocks.map((block, index) => ((lastVisibleBlockIndex + 1) >= index) &&
 				<Block key={index} components={block} notifyIsVisible={() => updateLastVisibleBlockIndex(index)} />)}
 		</ComponentsContainer>
-	)
-}
+	);
+};
 
 const Block = ({notifyIsVisible, components}) => {
 	const offset = 30;
@@ -252,8 +252,8 @@ const Block = ({notifyIsVisible, components}) => {
 
 	useEffect(() => {
 		if (inView)
-			notifyIsVisible()
-	}, [inView, notifyIsVisible])
+			notifyIsVisible();
+	}, [inView, notifyIsVisible]);
 
 	const ResizeHandle = (
 		<ResizeHandleButton>
@@ -307,5 +307,5 @@ const Block = ({notifyIsVisible, components}) => {
 				))}
 			</Components>
 		</div>
-	)
-}
+	);
+};

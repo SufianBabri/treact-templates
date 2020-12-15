@@ -16,7 +16,7 @@ const Subheading = tw(SubheadingBase)`mb-4`;
 const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
-const VerticalSpacer = tw.div`mt-10 w-full`
+const VerticalSpacer = tw.div`mt-10 w-full`;
 
 const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/3 max-w-sm`}
@@ -85,7 +85,7 @@ export default ({
 		{
 			title: 'Fast',
 			description: 'Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.'
-		},
+		}
 	];
 
 	if (!cards) cards = defaultCards;

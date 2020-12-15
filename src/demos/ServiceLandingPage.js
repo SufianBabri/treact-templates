@@ -14,7 +14,7 @@ import FAQ from 'components/faqs/SingleCol';
 import GetStarted from 'components/cta/GetStartedLight';
 import Footer from 'components/footers/FiveColumnWithInputForm';
 
-const HighlightedText = tw.span`text-primary-500`
+const HighlightedText = tw.span`text-primary-500`;
 
 export default () => {
 	return (

@@ -53,7 +53,7 @@ interface IProps {
 export default ({
 					subheading = 'Blog',
 					heading = <>We Love <span tw="text-primary-500">Writing.</span></>,
-					description = 'Some amazing blog posts that are written by even more amazing people.',
+					description = 'Some amazing blog posts that are written by even more amazing people.'
 
 				}: IProps) => {
 	const blogPosts = [

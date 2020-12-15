@@ -68,7 +68,7 @@ export default ({
 					watchVideoYoutubeUrl = 'https://www.youtube.com/embed/_GuOjXYl5ew',
 					imageSrc = DesignIllustration,
 					imageCss = null,
-					imageDecoratorBlob = false,
+					imageDecoratorBlob = false
 				}) => {
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 

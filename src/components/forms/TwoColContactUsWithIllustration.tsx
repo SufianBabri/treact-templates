@@ -16,7 +16,7 @@ const TextColumn = styled(Column)((props: ITextColumnProps) => [
 
 const Image = styled.div((props: IImageColumnProps) => [
 	`background-image: url("${props.imageSrc}");`,
-	tw`rounded bg-contain bg-no-repeat bg-center h-full`,
+	tw`rounded bg-contain bg-no-repeat bg-center h-full`
 ]);
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
@@ -48,7 +48,7 @@ export default ({
 					submitButtonText = 'Contact Me',
 					formAction = '#',
 					formMethod = 'get',
-					textOnLeft = true,
+					textOnLeft = true
 				}: IProps) => {
 	// The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
