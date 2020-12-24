@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 //eslint-disable-next-line
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
+import {FullSectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography';
 
 import defaultCardImage from 'images/shield-icon.svg';
@@ -20,7 +20,6 @@ const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
 const Subheading = tw(SubheadingBase)`mb-4 text-gray-100`;
-const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center text-gray-300`;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;

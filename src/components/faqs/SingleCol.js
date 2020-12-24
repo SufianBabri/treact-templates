@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {motion} from 'framer-motion';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
+import {FullSectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography';
 import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
 import {ReactComponent as ChevronDownIcon} from 'feather-icons/dist/icons/chevron-down.svg';
@@ -10,7 +10,6 @@ import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-7.s
 import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-8.svg';
 
 const Subheading = tw(SubheadingBase)`mb-4 text-center`;
-const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-center`;
 
 const Column = tw.div`flex flex-col items-center`;

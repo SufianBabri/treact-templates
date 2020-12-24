@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {SectionHeading} from 'components/misc/Headings';
+import {FullSectionHeading as Heading} from 'components/misc/Headings';
 
 import defaultCardImage from 'images/shield-icon.svg';
 import ShieldIconImage from 'images/shield-icon.svg';
@@ -18,7 +18,6 @@ const Container = tw.div`relative`;
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
 `;
-const Heading = tw(SectionHeading)`w-full`;
 
 const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/3 px-6 flex`}

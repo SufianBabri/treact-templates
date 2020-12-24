@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
+import {FullSectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
 import {SectionDescription} from 'components/misc/Typography';
 import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
 import {Container as ContainerBase, ContentWithPaddingXl as ContentBase} from 'components/misc/Layouts';
@@ -13,7 +13,6 @@ const ContentWithPaddingXl = tw(
 )`relative z-10 mx-auto px-0 py-10 sm:px-6 md:px-8 lg:px-12 xl:px-24 sm:py-20 flex flex-col max-w-screen-xl`;
 const HeaderContainer = tw.div`mt-10 w-full flex flex-col items-center`;
 const Subheading = tw(SubheadingBase)`mb-4 text-gray-100`;
-const Heading = tw(SectionHeading)`w-full`;
 const Description = tw(SectionDescription)`w-full text-gray-300 text-center`;
 
 const PlansContainer = tw.div`mt-16 flex flex-col items-center lg:flex-row lg:items-stretch lg:justify-between text-gray-900 font-medium`;
