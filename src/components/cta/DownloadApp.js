@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import mockupImageSrc from 'images/app-mockup.png';
-import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-9.svg';
-import {Container as ContainerBase, ContentWithPaddingXl} from 'components/misc/Layouts';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import appleIconImageSrc from 'images/apple-icon.png';
-import googlePlayIconImageSrc from 'images/google-play-icon.png';
+import mockupImageSrc from '../../images/app-mockup.png';
+import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-9.svg';
+import {Container as ContainerBase, ContentWithPaddingXl} from '../misc/Layouts';
+import {SectionHeading, Subheading as SubheadingBase} from '../misc/Headings';
+import appleIconImageSrc from '../../images/apple-icon.png';
+import googlePlayIconImageSrc from '../../images/google-play-icon.png';
 
 const Container = tw(ContainerBase)`bg-gray-900 -mx-8`;
 const Content = tw(ContentWithPaddingXl)``;

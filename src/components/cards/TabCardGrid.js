@@ -3,12 +3,12 @@ import {motion} from 'framer-motion';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {css} from 'styled-components/macro'; //eslint-disable-line
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
-import {SectionHeading} from 'components/misc/Headings';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
-import {ReactComponent as StarIcon} from 'images/star-icon.svg';
-import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-5.svg';
-import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-7.svg';
+import {Container, ContentWithPaddingXl} from '../misc/Layouts';
+import {SectionHeading} from '../misc/Headings';
+import {PrimaryButton as PrimaryButtonBase} from '../misc/Buttons';
+import {ReactComponent as StarIcon} from '../../images/star-icon.svg';
+import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-5.svg';
+import {ReactComponent as SvgDecoratorBlob2} from '../../images/svg-decorator-blob-7.svg';
 
 const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;

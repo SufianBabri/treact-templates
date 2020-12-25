@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import tw, {TwStyle} from 'twin.macro';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {SectionDescription} from 'components/misc/Typography';
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
-import {ReactComponent as ArrowRightIcon} from 'images/arrow-right-icon.svg';
-import SupportIconImage from 'images/support-icon.svg';
-import ShieldIconImage from 'images/shield-icon.svg';
-import CustomizeIconImage from 'images/customize-icon.svg';
-import {ReactComponent as SvgDecoratorBlob3} from 'images/svg-decorator-blob-3.svg';
+import {SectionHeading, Subheading as SubheadingBase} from '../misc/Headings';
+import {SectionDescription} from '../misc/Typography';
+import {Container, ContentWithPaddingXl} from '../misc/Layouts';
+import {ReactComponent as ArrowRightIcon} from '../../images/arrow-right-icon.svg';
+import SupportIconImage from '../../images/support-icon.svg';
+import ShieldIconImage from '../../images/shield-icon.svg';
+import CustomizeIconImage from '../../images/customize-icon.svg';
+import {ReactComponent as SvgDecoratorBlob3} from '../../images/svg-decorator-blob-3.svg';
 
 const Heading = tw(SectionHeading)``;
 const Subheading = tw(SubheadingBase)`text-center mb-3`;

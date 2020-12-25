@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
-import {SectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-7.svg';
-import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-8.svg';
+import {Container, ContentWithPaddingXl} from '../misc/Layouts';
+import {SectionHeading as Heading, Subheading as SubheadingBase} from '../misc/Headings';
+import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-7.svg';
+import {ReactComponent as SvgDecoratorBlob2} from '../../images/svg-decorator-blob-8.svg';
 
 const Subheading = tw(SubheadingBase)`text-center`;
 const Testimonials = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;

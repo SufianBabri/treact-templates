@@ -5,13 +5,13 @@ import HeaderBase, {
 	NavLink as NavLinkBase,
 	NavLinks,
 	PrimaryLink as PrimaryLinkBase
-} from 'components/headers/light';
-import {Container as ContainerBase, Content2Xl, ContentWithVerticalPadding} from 'components/misc/Layouts';
-import {SectionHeading} from 'components/misc/Headings';
-import {SectionDescription} from 'components/misc/Typography';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
-import logoImageSrc from 'images/logo-light.svg';
-import serverIllustrationImageSrc from 'images/server-illustration-2.svg';
+} from '../headers/light';
+import {Container as ContainerBase, Content2Xl, ContentWithVerticalPadding} from '../misc/Layouts';
+import {SectionHeading} from '../misc/Headings';
+import {SectionDescription} from '../misc/Typography';
+import {PrimaryButton as PrimaryButtonBase} from '../misc/Buttons';
+import logoImageSrc from '../../images/logo-light.svg';
+import serverIllustrationImageSrc from '../../images/server-illustration-2.svg';
 
 const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-primary-900 text-gray-100`;
 const Header = tw(HeaderBase)`max-w-none -mt-8 py-8 -mx-8 px-8`;

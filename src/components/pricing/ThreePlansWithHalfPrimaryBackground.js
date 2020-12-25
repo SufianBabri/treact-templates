@@ -1,11 +1,11 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import {FullSectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {SectionDescription} from 'components/misc/Typography';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
-import {Container as ContainerBase, ContentWithPaddingXl as ContentBase} from 'components/misc/Layouts';
-import {ReactComponent as CheckboxIcon} from 'images/checkbox-circle.svg';
+import {FullSectionHeading as Heading, Subheading as SubheadingBase} from '../misc/Headings';
+import {SectionDescription} from '../misc/Typography';
+import {PrimaryButton as PrimaryButtonBase} from '../misc/Buttons';
+import {Container as ContainerBase, ContentWithPaddingXl as ContentBase} from '../misc/Layouts';
+import {ReactComponent as CheckboxIcon} from '../../images/checkbox-circle.svg';
 
 const Container = tw(ContainerBase)`bg-primary-900 text-gray-100 -mx-8 px-8`;
 const ContentWithPaddingXl = tw(

@@ -1,8 +1,8 @@
 import React from 'react';
 import tw from 'twin.macro';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {Container as ContainerBase, ContentWithPaddingXl} from 'components/misc/Layouts';
-import {SectionDescription} from 'components/misc/Typography';
+import {SectionHeading, Subheading as SubheadingBase} from '../misc/Headings';
+import {Container as ContainerBase, ContentWithPaddingXl} from '../misc/Layouts';
+import {SectionDescription} from '../misc/Typography';
 
 const Container = tw(ContainerBase)`my-8 lg:my-10 bg-primary-900 text-gray-100 -mx-8 px-8`;
 const HeadingContainer = tw.div``;

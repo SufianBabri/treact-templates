@@ -8,7 +8,7 @@ import Header, {
 	NavLinks,
 	NavToggle,
 	PrimaryLink as PrimaryLinkBase
-} from 'components/headers/light';
+} from '../headers/light';
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none w-full`}

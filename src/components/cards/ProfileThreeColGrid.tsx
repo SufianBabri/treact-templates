@@ -1,13 +1,13 @@
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {css} from 'styled-components/macro';
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {SectionDescription} from 'components/misc/Typography';
-import {ReactComponent as TwitterIcon} from 'images/twitter-icon.svg';
-import {ReactComponent as LinkedinIcon} from 'images/linkedin-icon.svg';
-import {ReactComponent as GithubIcon} from 'images/github-icon.svg';
-import {IImageColumnProps} from 'components/common/ColumnProps';
+import {Container, ContentWithPaddingXl} from '../misc/Layouts';
+import {SectionHeading, Subheading as SubheadingBase} from '../misc/Headings';
+import {SectionDescription} from '../misc/Typography';
+import {ReactComponent as TwitterIcon} from '../../images/twitter-icon.svg';
+import {ReactComponent as LinkedinIcon} from '../../images/linkedin-icon.svg';
+import {ReactComponent as GithubIcon} from '../../images/github-icon.svg';
+import {IImageColumnProps} from '../common/ColumnProps';
 
 const HeadingContainer = tw.div``;
 const Heading = tw(SectionHeading)``;

@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 //eslint-disable-next-line
-import {FullSectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {FullSectionDescription as Description} from 'components/misc/Typography';
+import {FullSectionHeading as Heading, Subheading as SubheadingBase} from '../misc/Headings';
+import {FullSectionDescription as Description} from '../misc/Typography';
 
-import {ReactComponent as SvgDecoratorBlob3} from 'images/svg-decorator-blob-3.svg';
+import {ReactComponent as SvgDecoratorBlob3} from '../../images/svg-decorator-blob-3.svg';
 
 const Container = tw.div`relative`;
 

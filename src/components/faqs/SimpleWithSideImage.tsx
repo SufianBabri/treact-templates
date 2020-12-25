@@ -2,7 +2,7 @@ import {useState} from 'react';
 import {motion} from 'framer-motion';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
+import {SectionHeading, Subheading as SubheadingBase} from '../misc/Headings';
 import {ReactComponent as PlusIcon} from 'feather-icons/dist/icons/plus.svg';
 import {ReactComponent as MinusIcon} from 'feather-icons/dist/icons/minus.svg';
 

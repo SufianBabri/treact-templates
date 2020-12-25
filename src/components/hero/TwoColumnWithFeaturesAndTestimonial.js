@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import HeaderBase, {NavLink, NavLinks, PrimaryLink} from 'components/headers/light';
-import {SectionHeading} from 'components/misc/Headings';
-import {SectionDescription} from 'components/misc/Typography';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
-import {Container, ContentWithVerticalPadding} from 'components/misc/Layouts';
+import HeaderBase, {NavLink, NavLinks, PrimaryLink} from '../headers/light';
+import {SectionHeading} from '../misc/Headings';
+import {SectionDescription} from '../misc/Typography';
+import {PrimaryButton as PrimaryButtonBase} from '../misc/Buttons';
+import {Container, ContentWithVerticalPadding} from '../misc/Layouts';
 import {ReactComponent as CheckboxIcon} from 'feather-icons/dist/icons/check-circle.svg';
-import {ReactComponent as QuotesLeftIconBase} from 'images/quotes-l.svg';
-import {ReactComponent as SvgDecoratorBlob1} from 'images/dot-pattern.svg';
+import {ReactComponent as QuotesLeftIconBase} from '../../images/quotes-l.svg';
+import {ReactComponent as SvgDecoratorBlob1} from '../../images/dot-pattern.svg';
 
 const Header = tw(HeaderBase)`max-w-none`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;

@@ -1,10 +1,10 @@
 import tw, {TwStyle} from 'twin.macro';
 import styled from 'styled-components';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
-import TeamIllustrationSrc from 'images/team-illustration-2.svg';
-import {ReactComponent as SvgDotPattern} from 'images/dot-pattern.svg';
-import {ITextColumnProps} from 'components/common/ColumnProps';
+import {SectionHeading, Subheading as SubheadingBase} from '../misc/Headings';
+import {PrimaryButton as PrimaryButtonBase} from '../misc/Buttons';
+import TeamIllustrationSrc from '../../images/team-illustration-2.svg';
+import {ReactComponent as SvgDotPattern} from '../../images/dot-pattern.svg';
+import {ITextColumnProps} from '../common/ColumnProps';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;

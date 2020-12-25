@@ -2,8 +2,8 @@ import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
-import {SectionHeading} from 'components/misc/Headings';
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
+import {SectionHeading} from '../misc/Headings';
+import {Container, ContentWithPaddingXl} from '../misc/Layouts';
 
 const Row = tw.div`flex flex-col lg:flex-row -mb-10`;
 const Heading = tw(SectionHeading)`text-left lg:text-4xl xl:text-5xl`;

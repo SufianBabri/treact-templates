@@ -2,12 +2,12 @@ import React, {useState} from 'react';
 import {motion} from 'framer-motion';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {FullSectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {FullSectionDescription as Description} from 'components/misc/Typography';
-import {Container, ContentWithPaddingXl} from 'components/misc/Layouts';
+import {FullSectionHeading as Heading, Subheading as SubheadingBase} from '../misc/Headings';
+import {FullSectionDescription as Description} from '../misc/Typography';
+import {Container, ContentWithPaddingXl} from '../misc/Layouts';
 import {ReactComponent as ChevronDownIcon} from 'feather-icons/dist/icons/chevron-down.svg';
-import {ReactComponent as SvgDecoratorBlob1} from 'images/svg-decorator-blob-7.svg';
-import {ReactComponent as SvgDecoratorBlob2} from 'images/svg-decorator-blob-8.svg';
+import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-7.svg';
+import {ReactComponent as SvgDecoratorBlob2} from '../../images/svg-decorator-blob-8.svg';
 
 const Subheading = tw(SubheadingBase)`mb-4 text-center`;
 

@@ -2,17 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 //eslint-disable-next-line
-import {FullSectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {FullSectionDescription as SectionDescription} from 'components/misc/Typography';
+import {FullSectionHeading as Heading, Subheading as SubheadingBase} from '../misc/Headings';
+import {FullSectionDescription as SectionDescription} from '../misc/Typography';
 
-import defaultCardImage from 'images/shield-icon.svg';
-import ShieldIconImage from 'images/shield-icon.svg';
+import defaultCardImage from '../../images/shield-icon.svg';
+import ShieldIconImage from '../../images/shield-icon.svg';
 
-import SupportIconImage from 'images/support-icon.svg';
-import CustomizeIconImage from 'images/customize-icon.svg';
-import FastIconImage from 'images/fast-icon.svg';
-import ReliableIconImage from 'images/reliable-icon.svg';
-import SimpleIconImage from 'images/simple-icon.svg';
+import SupportIconImage from '../../images/support-icon.svg';
+import CustomizeIconImage from '../../images/customize-icon.svg';
+import FastIconImage from '../../images/fast-icon.svg';
+import ReliableIconImage from '../../images/reliable-icon.svg';
+import SimpleIconImage from '../../images/simple-icon.svg';
 
 const Container = tw.div`relative bg-primary-900 -mx-8 px-8 text-gray-100`;
 

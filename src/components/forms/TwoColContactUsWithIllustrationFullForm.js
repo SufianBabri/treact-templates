@@ -1,9 +1,9 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import {SectionHeading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {PrimaryButton as PrimaryButtonBase} from 'components/misc/Buttons';
-import EmailIllustrationSrc from 'images/email-illustration.svg';
+import {SectionHeading, Subheading as SubheadingBase} from '../misc/Headings';
+import {PrimaryButton as PrimaryButtonBase} from '../misc/Buttons';
+import EmailIllustrationSrc from '../../images/email-illustration.svg';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
