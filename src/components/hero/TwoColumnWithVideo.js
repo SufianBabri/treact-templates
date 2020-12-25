@@ -4,8 +4,8 @@ import tw from 'twin.macro';
 //eslint-disable-next-line
 import Header from '../headers/light';
 
-import ReactModalAdapter from 'helpers/ReactModalAdapter';
-import ResponsiveVideoEmbed from 'helpers/ResponsiveVideoEmbed';
+import ReactModalAdapter from '../../helpers/ReactModalAdapter';
+import ResponsiveVideoEmbed from '../../helpers/ResponsiveVideoEmbed';
 
 import {ReactComponent as PlayIcon} from 'feather-icons/dist/icons/play-circle.svg';
 import {ReactComponent as CloseIcon} from 'feather-icons/dist/icons/x.svg';

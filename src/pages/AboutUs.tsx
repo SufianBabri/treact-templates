@@ -1,17 +1,17 @@
-import AnimationRevealPage from 'helpers/AnimationRevealPage';
+import AnimationRevealPage from '../helpers/AnimationRevealPage';
 import tw from 'twin.macro';
-import Header from 'components/headers/light';
-import Footer from 'components/footers/FiveColumnWithInputForm';
-import MainFeature1 from 'components/features/TwoColWithButton';
+import Header from '../components/headers/light';
+import Footer from '../components/footers/FiveColumnWithInputForm';
+import MainFeature1 from '../components/features/TwoColWithButton';
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats";
 // import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2";
-import Features from 'components/features/ThreeColSimple';
+import Features from '../components/features/ThreeColSimple';
 // import Features from "components/features/ThreeColWithSideImage";
-import TeamCardGrid from 'components/cards/ProfileThreeColGrid';
+import TeamCardGrid from '../components/cards/ProfileThreeColGrid';
 
-import SupportIconImage from 'images/support-icon.svg';
-import ShieldIconImage from 'images/shield-icon.svg';
-import CustomerLoveIconImage from 'images/simple-icon.svg';
+import SupportIconImage from '../images/support-icon.svg';
+import ShieldIconImage from '../images/shield-icon.svg';
+import CustomerLoveIconImage from '../images/simple-icon.svg';
 
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {

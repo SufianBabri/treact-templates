@@ -1,12 +1,12 @@
 import React from 'react';
-import AnimationRevealPage from 'helpers/AnimationRevealPage';
-import {Container as ContainerBase} from 'components/misc/Layouts';
+import AnimationRevealPage from '../helpers/AnimationRevealPage';
+import {Container as ContainerBase} from '../components/misc/Layouts';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import illustration from 'images/signup-illustration.svg';
-import logo from 'images/logo.svg';
-import googleIconImageSrc from 'images/google-icon.png';
-import twitterIconImageSrc from 'images/twitter-icon.png';
+import illustration from '../images/signup-illustration.svg';
+import logo from '../images/logo.svg';
+import googleIconImageSrc from '../images/google-icon.png';
+import twitterIconImageSrc from '../images/twitter-icon.png';
 import {ReactComponent as SignUpIcon} from 'feather-icons/dist/icons/user-plus.svg';
 
 const Container = tw(ContainerBase)`min-h-screen bg-primary-900 text-white font-medium flex justify-center -m-8`;

@@ -1,18 +1,18 @@
 import React from 'react';
 import tw from 'twin.macro';
-import AnimationRevealPage from 'helpers/AnimationRevealPage';
-import Hero from 'components/hero/TwoColumnWithVideo';
-import Features from 'components/features/ThreeColSimple';
-import MainFeature from 'components/features/TwoColWithButton';
-import MainFeature2 from 'components/features/TwoColSingleFeatureWithStats2';
-import TabGrid from 'components/cards/TabCardGrid';
-import Testimonial from 'components/testimonials/ThreeColumnWithProfileImage';
-import DownloadApp from 'components/cta/DownloadApp';
-import Footer from 'components/footers/FiveColumnWithInputForm';
+import AnimationRevealPage from '../helpers/AnimationRevealPage';
+import Hero from '../components/hero/TwoColumnWithVideo';
+import Features from '../components/features/ThreeColSimple';
+import MainFeature from '../components/features/TwoColWithButton';
+import MainFeature2 from '../components/features/TwoColSingleFeatureWithStats2';
+import TabGrid from '../components/cards/TabCardGrid';
+import Testimonial from '../components/testimonials/ThreeColumnWithProfileImage';
+import DownloadApp from '../components/cta/DownloadApp';
+import Footer from '../components/footers/FiveColumnWithInputForm';
 
-import chefIconImageSrc from 'images/chef-icon.svg';
-import celebrationIconImageSrc from 'images/celebration-icon.svg';
-import shopIconImageSrc from 'images/shop-icon.svg';
+import chefIconImageSrc from '../images/chef-icon.svg';
+import celebrationIconImageSrc from '../images/celebration-icon.svg';
+import shopIconImageSrc from '../images/shop-icon.svg';
 
 export default () => {
 	const Subheading = tw.span`tracking-wider text-sm font-medium`;
