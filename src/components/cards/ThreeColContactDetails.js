@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 //eslint-disable-next-line
 import {FullSectionHeading as Heading, Subheading as SubheadingBase} from 'components/misc/Headings';
-import {SectionDescription} from 'components/misc/Typography';
+import {FullSectionDescription as Description} from 'components/misc/Typography';
 
 import {ReactComponent as SvgDecoratorBlob3} from 'images/svg-decorator-blob-3.svg';
 
@@ -13,7 +13,6 @@ const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
 const Subheading = tw(SubheadingBase)`mb-4`;
-const Description = tw(SectionDescription)`w-full text-center`;
 
 const VerticalSpacer = tw.div`mt-10 w-full`;
 
