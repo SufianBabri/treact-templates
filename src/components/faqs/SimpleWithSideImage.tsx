@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import {SectionHeading, Subheading as SubheadingBase} from '../misc/Headings';
 import {ReactComponent as PlusIcon} from 'feather-icons/dist/icons/plus.svg';
 import {ReactComponent as MinusIcon} from 'feather-icons/dist/icons/minus.svg';
+import {Container} from '../misc/Layouts';
 
-const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
 
 const TwoColumn = tw.div`flex`;

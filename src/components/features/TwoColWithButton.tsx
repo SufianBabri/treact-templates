@@ -5,8 +5,8 @@ import {PrimaryButton as PrimaryButtonBase} from '../misc/Buttons';
 import TeamIllustrationSrc from '../../images/team-illustration-2.svg';
 import {ReactComponent as SvgDotPattern} from '../../images/dot-pattern.svg';
 import {ITextColumnProps} from '../common/ColumnProps';
+import {Container} from '../misc/Layouts';
 
-const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-6/12 flex-shrink-0 relative`;

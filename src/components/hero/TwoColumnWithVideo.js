@@ -12,8 +12,8 @@ import {ReactComponent as CloseIcon} from 'feather-icons/dist/icons/x.svg';
 import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-1.svg';
 import {ReactComponent as SvgDecoratorBlob2} from '../../images/dot-pattern.svg';
 import DesignIllustration from '../../images/design-illustration.svg';
+import {Container} from '../misc/Layouts';
 
-const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center`;

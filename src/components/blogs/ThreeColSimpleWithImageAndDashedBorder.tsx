@@ -7,9 +7,8 @@ import {ReactComponent as TagIcon} from 'feather-icons/dist/icons/tag.svg';
 import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-1.svg';
 import {ReactComponent as SvgDecoratorBlob2} from '../../images/svg-decorator-blob-3.svg';
 import {IImageColumnProps} from '../common/ColumnProps';
+import {Container, ContentWithPaddingXl as Content} from '../misc/Layouts';
 
-const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const ThreeColumn = tw.div`flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap`;
 const Column = tw.div`mt-24 lg:w-1/3`;
 

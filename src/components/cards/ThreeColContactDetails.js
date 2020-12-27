@@ -4,10 +4,8 @@ import tw from 'twin.macro';
 //eslint-disable-next-line
 import {FullSectionHeading as Heading, Subheading as SubheadingBase} from '../misc/Headings';
 import {FullSectionDescription as Description} from '../misc/Typography';
-
 import {ReactComponent as SvgDecoratorBlob3} from '../../images/svg-decorator-blob-3.svg';
-
-const Container = tw.div`relative`;
+import {Container} from '../misc/Layouts';
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}

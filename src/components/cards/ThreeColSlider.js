@@ -9,8 +9,8 @@ import {ReactComponent as LocationIcon} from 'feather-icons/dist/icons/map-pin.s
 import {ReactComponent as StarIcon} from 'feather-icons/dist/icons/star.svg';
 import {ReactComponent as ChevronLeftIcon} from 'feather-icons/dist/icons/chevron-left.svg';
 import {ReactComponent as ChevronRightIcon} from 'feather-icons/dist/icons/chevron-right.svg';
+import {Container} from '../misc/Layouts';
 
-const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
 
 const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;

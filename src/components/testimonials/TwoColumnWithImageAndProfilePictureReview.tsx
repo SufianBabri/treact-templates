@@ -13,9 +13,8 @@ import {ReactComponent as SvgDecoratorBlob2} from '../../images/svg-decorator-bl
 
 import 'slick-carousel/slick/slick.css';
 import {IImageColumnProps, ITextColumnProps} from '../common/ColumnProps';
+import {Container, ContentWithPaddingXl as Content} from '../misc/Layouts';
 
-const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const TestimonialsContainer = tw.div`mt-16 lg:mt-0`;
 const Testimonials = styled.div``;
 const Testimonial = tw.div`max-w-md lg:max-w-none mx-auto lg:mx-0 flex flex-col items-center lg:items-stretch lg:flex-row`;

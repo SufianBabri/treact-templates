@@ -9,11 +9,9 @@ import {ReactComponent as ArrowLeftIcon} from '../../images/arrow-left-2-icon.sv
 import {ReactComponent as ArrowRightIcon} from '../../images/arrow-right-2-icon.svg';
 import {ReactComponent as SvgDecoratorBlob1} from '../../images/svg-decorator-blob-4.svg';
 import {ReactComponent as SvgDecoratorBlob2} from '../../images/svg-decorator-blob-5.svg';
-
+import {Container, ContentWithPaddingXl as Content} from '../misc/Layouts';
 import 'slick-carousel/slick/slick.css';
 
-const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
 const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
 

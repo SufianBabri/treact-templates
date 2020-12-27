@@ -1,13 +1,11 @@
 import React from 'react';
 import tw from 'twin.macro';
 import {ReactComponent as EmailNewsletterIconBase} from '../../images/email-newsletter-icon.svg';
-import {Container as ContainerBase} from '../misc/Layouts';
+import {Container as ContainerBase, ContentWithPaddingXl as Content} from '../misc/Layouts';
 import {SectionHeading} from '../misc/Headings';
 import {PrimaryButton} from '../misc/Buttons';
 
-
 const Container = tw(ContainerBase)`bg-secondary-800 -mx-8`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const Row = tw.div`flex items-center justify-center flex-col lg:flex-row px-8`;
 const TextColumn = tw.div`flex items-center flex-col sm:flex-row`;

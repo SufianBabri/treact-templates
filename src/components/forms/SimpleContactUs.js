@@ -2,9 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import {ReactComponent as SvgDotPatternIcon} from '../../images/dot-pattern.svg';
-
-const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+import {Container, ContentWithPaddingXl as Content} from '../misc/Layouts';
 
 const FormContainer = styled.div`
   ${tw`p-10 sm:p-12 md:p-16 bg-primary-500 text-gray-100 rounded-lg relative`}

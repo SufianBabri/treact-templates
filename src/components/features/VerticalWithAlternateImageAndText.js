@@ -3,10 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import {ReactComponent as SvgDotPatternIcon} from '../../images/dot-pattern.svg';
 import {SectionHeading as HeadingTitle} from '../misc/Headings';
-
-const Container = tw.div`relative`;
-
-const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+import {Container, ContentWithPaddingXl as SingleColumn} from '../misc/Layouts';
 
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
 const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
