@@ -57,9 +57,10 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 interface IProps {
 	navLinks?: JSX.Element[];
 	logoLink?: JSX.Element;
+	videoUrl?: string;
 }
 
-const BackgroundAsImage = ({navLinks, logoLink}: IProps) => {
+const BackgroundAsImage = ({navLinks, logoLink, videoUrl}: IProps) => {
 	const defaultLinks = [
 		<NavLinks key={1}>
 			<NavLink href="#">
@@ -100,13 +101,13 @@ const BackgroundAsImage = ({navLinks, logoLink}: IProps) => {
 						</Heading>
 						<PrimaryAction>Read Customer Stories</PrimaryAction>
 					</LeftColumn>
-					<RightColumn>
+					{videoUrl && <RightColumn>
 						<StyledResponsiveVideoEmbed
-							url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
+							url={videoUrl}
 							background="transparent"
 						/>
 					</RightColumn>
-				</TwoColumn>
+					}                </TwoColumn>
 			</HeroContainer>
 		</Container>
 	);

@@ -14,7 +14,7 @@ import customerSupportIllustrationSrc from '../images/customer-support-illustrat
 
 export default () => (
 	<AnimationRevealPage>
-		<Hero />
+		<Hero videoUrl="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1" />
 		<MainFeature />
 		<Features />
 		<MainFeature2 />
