@@ -6,7 +6,7 @@ interface IProps {
 	className?: string;
 }
 
-export default ({url, background = 'black', className = 'video'}: IProps) => {
+const ResponsiveVideoEmbed = ({url, background = 'black', className = 'video'}: IProps) => {
 	return (
 		<div
 			className={className}
@@ -33,3 +33,5 @@ export default ({url, background = 'black', className = 'video'}: IProps) => {
 		</div>
 	);
 };
+
+export default ResponsiveVideoEmbed;
