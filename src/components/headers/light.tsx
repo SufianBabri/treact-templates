@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import useAnimatedNavToggler from '../../helpers/useAnimatedNavToggler';
 
 import logo from '../../images/logo.svg';
-import {ReactComponent as MenuIcon} from 'feather-icons/dist/icons/menu.svg';
-import {ReactComponent as CloseIcon} from 'feather-icons/dist/icons/x.svg';
+import {Menu as MenuIcon, X as CloseIcon} from 'react-feather';
 
 const Header = tw.header`
   flex justify-between items-center
@@ -61,7 +60,13 @@ interface IProps {
 	collapseBreakpointClass?: 'sm' | 'md' | 'lg' | 'xl';
 }
 
-export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = 'lg'}: IProps) => {
+const LightHeader = ({
+						 roundedHeaderButton = false,
+						 logoLink,
+						 links,
+						 className,
+						 collapseBreakpointClass = 'lg'
+					 }: IProps) => {
 	/*
 	 * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
 	 * This links props should be an array of "NavLinks" components which is exported from this file.
@@ -121,6 +126,8 @@ export default ({roundedHeaderButton = false, logoLink, links, className, collap
 		</Header>
 	);
 };
+
+export default LightHeader;
 
 /* The below code is for generating dynamic break points for navbar.
  * Using this you can specify if you want to switch

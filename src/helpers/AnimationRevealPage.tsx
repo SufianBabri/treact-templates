@@ -68,8 +68,10 @@ interface IProps {
 	children: JSX.Element[];
 }
 
-export default (props: IProps) => (
+const AnimationRevealPage = (props: IProps) => (
 	<StyledDiv className="App">
 		<AnimationReveal {...props} />
 	</StyledDiv>
 );
+
+export default AnimationRevealPage;

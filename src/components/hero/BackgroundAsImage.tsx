@@ -54,8 +54,13 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   }
 `;
 
-export default () => {
-	const navLinks = [
+interface IProps {
+	navLinks?: JSX.Element[];
+	logoLink?: JSX.Element;
+}
+
+const BackgroundAsImage = ({navLinks, logoLink}: IProps) => {
+	const defaultLinks = [
 		<NavLinks key={1}>
 			<NavLink href="#">
 				About
@@ -77,11 +82,13 @@ export default () => {
 		</NavLinks>
 	];
 
+	navLinks = navLinks || defaultLinks;
+
 	return (
 		<Container>
 			<OpacityOverlay />
 			<HeroContainer>
-				<StyledHeader links={navLinks} className={undefined} roundedHeaderButton={false} logoLink={undefined}
+				<StyledHeader links={navLinks} className={undefined} roundedHeaderButton={false} logoLink={logoLink}
 							  collapseBreakpointClass={'lg'} />
 				<TwoColumn>
 					<LeftColumn>
@@ -104,3 +111,5 @@ export default () => {
 		</Container>
 	);
 };
+
+export default BackgroundAsImage;
