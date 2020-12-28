@@ -12,7 +12,7 @@ type DirectionType = 'left' | 'right' | 'top' | 'bottom';
 
 interface IRevealProps {
 	disabled?: boolean;
-	children: JSX.Element[];
+	children: JSX.Element | JSX.Element[];
 }
 
 function AnimationReveal({disabled, children}: IRevealProps) {
@@ -65,7 +65,7 @@ function AnimatedSlideInComponent({direction = 'left', offset = 30, children}: I
 }
 
 interface IProps {
-	children: JSX.Element[];
+	children: JSX.Element | JSX.Element[];
 }
 
 const AnimationRevealPage = (props: IProps) => (
