@@ -42,7 +42,7 @@ const SlantedBackground = styled.span`
 
 const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
 
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:ring`;
+export const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-gray-100 text-primary-500 font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-gray-100 focus:ring`;
 
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 56.25% !important;
@@ -58,9 +58,21 @@ interface IProps {
 	navLinks?: JSX.Element[];
 	logoLink?: JSX.Element;
 	videoUrl?: string;
+	notification?: string;
+	heading?: string;
+	highlightedHeading?: string;
+	actionButton?: JSX.Element;
 }
 
-const BackgroundAsImage = ({navLinks, logoLink, videoUrl}: IProps) => {
+const BackgroundAsImage = ({
+							   navLinks,
+							   logoLink,
+							   videoUrl,
+							   notification,
+							   heading,
+							   highlightedHeading,
+							   actionButton
+						   }: IProps) => {
 	const defaultLinks = [
 		<NavLinks key={1}>
 			<NavLink href="#">
@@ -93,13 +105,13 @@ const BackgroundAsImage = ({navLinks, logoLink, videoUrl}: IProps) => {
 							  collapseBreakpointClass={'lg'} />
 				<TwoColumn>
 					<LeftColumn>
-						<Notification>We have now launched operations in Europe.</Notification>
+						{notification && <Notification>{notification}</Notification>}
 						<Heading>
-							<span>Hire the best</span>
+							{heading && <span>{heading}</span>}
 							<br />
-							<SlantedBackground>Marketing Team.</SlantedBackground>
+							{highlightedHeading && <SlantedBackground>{highlightedHeading}</SlantedBackground>}
 						</Heading>
-						<PrimaryAction>Read Customer Stories</PrimaryAction>
+						{actionButton}
 					</LeftColumn>
 					{videoUrl && <RightColumn>
 						<StyledResponsiveVideoEmbed

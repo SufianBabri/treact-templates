@@ -1,6 +1,6 @@
 import AnimationRevealPage from '../helpers/AnimationRevealPage';
 
-import Hero from '../components/hero/BackgroundAsImage';
+import Hero, {PrimaryAction} from '../components/hero/BackgroundAsImage';
 import Features from '../components/features/DashedBorderSixFeatures';
 import MainFeature from '../components/features/TwoColSingleFeatureWithStats2';
 import MainFeature2 from '../components/features/TwoColWithTwoFeaturesAndButtons';
@@ -14,7 +14,11 @@ import customerSupportIllustrationSrc from '../images/customer-support-illustrat
 
 export default () => (
 	<AnimationRevealPage>
-		<Hero videoUrl="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1" />
+		<Hero videoUrl="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
+			  notification="We have now launched operations in Europe."
+			  heading="Hire the best"
+			  highlightedHeading="Marketing Team."
+			  actionButton={<PrimaryAction>Read Customer Stories</PrimaryAction>} />
 		<MainFeature />
 		<Features />
 		<MainFeature2 />
